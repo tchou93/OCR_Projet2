@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Booki</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header>
+            <!-- On décide de découper le header en 3 parties:
+            1) Logo Booki + navigation (hébergements, Activités)
+            2) Texte + barre de recherche ville
+            3) Filtres : Comporte une liste de filtre. Nous allons considérer que les icônes des filtres sont en background, donc ils n'apparaissent pas sur le fichier html--> -->
+
+            <!-- 1) Logo Booki + navigation (hébergements, Activités) -->
+            <img src="images/logo/Booki@3x.png" alt="Logo de Booki" />
+            <nav>
+                <ul>
+                    <li><a href="#">Hébergements</a></li>
+                    <li><a href="#">Activités</a></li>
+                </ul>
+            </nav>
+
+            <!-- 2) Texte + barre de recherche ville -->
+			<h1> Trouver votre hébergement pour les vacances de rêve </h1>
+            <p> En plein centre ville ou en pleine nature </p>
+			
+			<img src="#" alt="Logo position" />
+			<form method="post" action="#">
+				<p>
+					<input type="text" name="ville" id="ville" placeholder="Marseille, France" size="30" maxlength="10" />
+				</p>
+			</form>
+			<img src="#" alt="Logo rechercher" />
+
+            <!-- 3) Filtres : Comporte une liste de filtre. Nous allons considérer que les icônes des filtres sont en background, donc ils n'apparaissent pas sur le fichier html-->
+			<p>Filtres</p>
+			<ul>
+				<li><p>Economique</p> <li>
+				<li><p>Familial</p> <li>
+				<li><p>Romantique</p> <li>
+				<li><p>Animaux autorisés</p> <li>
+			</ul>
+
+            <p> <img src="#" alt="information"/> Plus de 500 logements sont disponibles dans cette ville </p>
+        </header>
+
+        <section>
+            <!-- La section "Hébergements à Marseille" comporte une liste d'article. -->
+
+			<h2> Hébergement a Marseille </h2>
+			<ul>
+				<li>
+					<article id="Auberge_Cannebiere">
+						<img src="#" alt="Auberge_Cannebiere" />
+						<h2> Auberge La Cannebière </h2> 
+						<p> Nuit à partir de 25 euros </p>
+						<img src="#" alt="etoile4" />
+					</article>
+				</li>
+				<li>
+					<article id="Hotel_port">
+						<img src="#" alt="Hotel_port" />
+						<h2> Hôtel du port </h2> 
+						<p> Nuit à partir de 52 euros </p>
+						<img src="#" alt="etoile5" />
+					</article>
+				</li>
+				<li>
+					<article id="Hotel_mouettes">
+						<img src="#" alt="Hotel_mouettes" />
+						<h2> Hôtel les mouettes </h2> 
+						<p> Nuit à partir de 76 euros  </p>
+						<img src="#" alt="etoile4" />
+					</article>
+				</li>
+
+                <li>
+					<article id="Hotel_de_la_mer">
+						<img src="#" alt="Hotel_de_la_mer" />
+						<h2> Hôtel de la mer </h2> 
+						<p> Nuit à partir de 46 euros </p>
+						<img src="#" alt="etoile3" />
+					</article>
+				</li>
+				<li>
+					<article id="Hotel_le_panier">
+						<img src="#" alt="Hotel_le_panier" />
+						<h2> Auberge Le Panier </h2> 
+						<p> Nuit à partir de 23 euros </p>
+						<img src="#" alt="etoile4" />
+					</article>
+				</li>
+				<li>
+					<article id="Hotel_chez_amira">
+						<img src="#" alt="Hotel_chez_amira" />
+						<h2> Hôtel chez Amina </h2> 
+						<p> Nuit à partir de 96 euros</p>
+						<img src="#" alt="etoile5" />
+					</article>
+				</li>
+			</ul>	
+			<p> Afficher plus </p>  
+			
+			
+            <aside>
+                <!-- L'aside "Les plus populaires" est un complément à la section "hébergements à Marseille", il comporte une liste d'article. -->
+                <h2> Les plus populaires </h2>
+                <ul>
+                    <li>
+				    	<article id="Hotel_le_soleil_du_matin">
+							<img src="#" alt="" />
+				    		<h2> Hôtel le soleil du matin</h2> 
+				    		<p> Nuit à partir de 128 euros </p>
+				    		<img src="#" alt="etoile5" />
+				    	</article>
+				    </li>
+				    <li>
+				    	<article id="Au_coeur_de_l_eau_chambres_hotes">
+							<img src="#" alt="" />
+				    		<h2> Au coeur de l'eau Chambres d'hôtes </h2> 
+				    		<p> Nuit à partir de 71 euros</p>
+				    		<img src="#" alt="etoile4" />
+				    	</article>
+				    </li>
+                    <li>
+				    	<article id="Hotel_tout_bleu_et_blanc">
+							<img src="#" alt="" />
+				    		<h2> Hotel Tout Bleu et Blanc </h2> 
+				    		<p> Nuit à partir de 68 euros</p>
+				    		<img src="#" alt="etoile4" />
+				    	</article>
+				    </li>
+		    	</ul>	
+            </aside>   
+        </section>
+        
+        <section>
+			<!-- La section "Activités à Marseille" comporte une liste d'article. -->
+			<h2> Les plus populaires </h2>
+			<ul>
+				<li>
+					<article id="Act_Vieux_Port">
+						<img src="#" alt="Act_Vieux_Port" />
+						<h2> Vieux Port</h2> 
+					</article>
+				</li>
+				<li>
+					<article id="Act_Fort_de_Pomegues">
+						<img src="#" alt="Act_Fort_de_Pomegues" />
+						<h2> Fort de Pomègues</h2> 
+					</article>
+				</li>
+				<li>
+					<article id="Act_Iles_du_Frioul">
+						<img src="#" alt="Act_Iles_du_Frioul" />
+						<h2> Iles du Frioul</h2> 
+					</article>
+				</li>
+				<li>
+					<article id="Act_Parc_National_des_Calanques">
+						<img src="#" alt="Act_Parc_National_des_Calanques" />
+						<h2> Parc National des Calanques</h2> 
+					</article>
+				</li>
+				<li>
+					<article id="Act_Notre_Dame_de_la_garde">
+						<img src="#" alt="Act_Notre_Dame_de_la_garde" />
+						<h2> Notre Dame de la garde</h2> 
+					</article>
+				</li>
+				<li>
+					<article id="Act_Parc_Longchamp">
+						<img src="#" alt="Act_Parc_Longchamp" />
+						<h2> Parc Longchamp</h2> 
+					</article>
+				</li>
+			</ul>	
+
+		</section>
+
+        <!-- On décide de découper le footer en 3 parties:
+            - A propos: Liste de 3 liens.
+            - Nos Hébergements: Liste de 2 liens.
+            - Assistance: Liste de 2 liens. -->
+
+        <footer>
+            <!-- A propos: Liste de 3 liens. -->
+            <p>A propos</p>
+            <ul>
+                <li><a href="#">Fonctionnement du site</a></li>
+                <li><a href="#">Conditions generales de vente</a></li>
+                <li><a href="#">Donnees et confidentialite</a></li>
+            </ul>
+
+            <!-- - Nos Hébergements: Liste de 2 liens. -->
+            <p>Nos hébergements</p>
+            <ul>
+                <li><a href="#">Charte qualité</a></li>
+                <li><a href="#">Soumettre votre hôtel</a></li>
+            </ul>
+
+            <!-- - Assistance: Liste de 2 liens. -->
+            <p>Assistance</p>
+            <ul>
+                <li><a href="#">Centre d'aide</a></li>
+                <li><a href="#">Nous contacter</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
