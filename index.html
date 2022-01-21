@@ -4,6 +4,12 @@
         <title>Booki</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
+		<link href="images/fontawesome/css/all.css" rel="stylesheet">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+		<!-- Google Fonts : Police Raleway-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -11,39 +17,61 @@
             <!-- On décide de découper le header en 3 parties:
             1) Logo Booki + navigation (hébergements, Activités)
             2) Texte + barre de recherche ville
-            3) Filtres : Comporte une liste de filtre. Nous allons considérer que les icônes des filtres sont en background, donc ils n'apparaissent pas sur le fichier html--> -->
+            3) Filtres : Comporte une liste de filtre. -->
 
             <!-- 1) Logo Booki + navigation (hébergements, Activités) -->
-            <img src="images/logo/Booki@3x.png" alt="Logo de Booki" />
-            <nav>
-                <ul>
-                    <li><a href="#">Hébergements</a></li>
-                    <li><a href="#">Activités</a></li>
-                </ul>
-            </nav>
+			<div id="logo_nav_booki">
+				<div id="logo_booki">
+					<img src="images/logo/Booki@3x.png" alt="Logo de Booki" />
+				</div>
+
+				<nav>
+					<ul>
+						<li><a href="#">Hébergements</a></li>
+						<li><a href="#">Activités</a></li>
+					</ul>
+				</nav>
+			</div>
+
 
             <!-- 2) Texte + barre de recherche ville -->
-			<h1> Trouver votre hébergement pour les vacances de rêve </h1>
-            <p> En plein centre ville ou en pleine nature </p>
+			<div id="texte_hebergement">
+				<p class="theme"> Trouver votre hébergement pour les vacances de rêve </p>
+				<p class ="description"> En plein centre ville ou en pleine nature </p>
+			</div>
+
+
+			<div id="barre_recherche">
+				<div id="container_ico_rechercher">
+						<i class="fas fa-map-marker-alt"></i>			
+				</div>
+
+				<form method="post" action="#">
+					<p class ="description">
+						<input type="text" name="barre_ville" id="barre_ville" placeholder="Marseille, France" maxlength="25" />
+					</p>
+				</form>
+
+                <button class="bouton_rechercher" type="button">Rechercher</button>
+			</div>
 			
-			<img src="#" alt="Logo position" />
-			<form method="post" action="#">
-				<p>
-					<input type="text" name="ville" id="ville" placeholder="Marseille, France" size="30" maxlength="10" />
-				</p>
-			</form>
-			<img src="#" alt="Logo rechercher" />
 
-            <!-- 3) Filtres : Comporte une liste de filtre. Nous allons considérer que les icônes des filtres sont en background, donc ils n'apparaissent pas sur le fichier html-->
-			<p>Filtres</p>
-			<ul>
-				<li><p>Economique</p> <li>
-				<li><p>Familial</p> <li>
-				<li><p>Romantique</p> <li>
-				<li><p>Animaux autorisés</p> <li>
-			</ul>
+            <!-- 3) Filtres : Comporte une liste de filtre. -->
+			<div id="Filtres">
+				<p class="important">Filtres</p>
 
-            <p> <img src="#" alt="information"/> Plus de 500 logements sont disponibles dans cette ville </p>
+				<ul>
+					<li class="important"><i class="fas fa-money-bill-wave"></i>Économique </li>
+					<li class="important"><i class="fas fa-child"></i>Familial </li>
+					<li class="important"><i class="fas fa-heart"></i>Romantique </li>
+					<li class="important"><i class="fas fa-dog"></i>Animaux autorisés </li>
+				</ul>
+			</div>
+
+			<div id="Informations">
+				<i class="fas fa-info"></i>
+            	<p class="description">  Plus de 500 logements sont disponibles dans cette ville </p>
+			</div> 
         </header>
 
         <section>
