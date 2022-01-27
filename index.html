@@ -5,7 +5,12 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
 		<link href="images/fontawesome/css/all.css" rel="stylesheet">
-		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<!-- Gestion des fichiers de responsive -->
+		<link rel="stylesheet" media="screen and (max-width: 991px)" href="style_tablet.css" /> 
+		<link rel="stylesheet" media="screen and (max-width: 767px)" href="style_mobile.css" /> 
+
 		<!-- Google Fonts : Police Raleway-->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,37 +18,30 @@
     </head>
 
     <body>
-        <header>
-            <!-- On décide de découper le header en 3 parties:
-            1) Logo Booki + navigation (hébergements, Activités)
-            2) Texte + barre de recherche ville
-            3) Filtres : Comporte une liste de filtre. -->
-
-            <!-- 1) Logo Booki + navigation (hébergements, Activités) -->
-			<div id="logo_nav_booki">
-				<div id="logo_booki">
-					<img src="images/logo/Booki@3x.png" alt="Logo de Booki" />
-				</div>
-
-				<nav>
-					<ul>
-						<li><a href="#">Hébergements</a></li>
-						<li><a href="#">Activités</a></li>
-					</ul>
-				</nav>
+		<!-- La balise "nav": Logo Booki + navigation (hébergements, Activités) -->
+        <nav>
+			<div id="logo_booki">
+				<img src="images/logo/Booki@3x.png" alt="Logo de Booki" />
 			</div>
+			<div id="nav_booki">
+				<ul>
+					<li><a class="description" href="#">Hébergements</a></li>
+					<li><a class="description" href="#">Activités</a></li>
+				</ul>
+			</div>
+		</nav>
 
-
-            <!-- 2) Texte + barre de recherche ville -->
+		<!-- La balise "header" comporte une introduction au site -->
+		<header>
 			<div id="texte_hebergement">
 				<p class="theme"> Trouver votre hébergement pour les vacances de rêve </p>
-				<p class ="description"> En plein centre ville ou en pleine nature </p>
+				<p class="description"> En plein centre ville ou en pleine nature </p>
 			</div>
 
 
 			<div id="barre_recherche">
 				<div id="container_ico_rechercher">
-						<i class="fas fa-map-marker-alt"></i>			
+					<i class="fas fa-map-marker-alt"></i>			
 				</div>
 
 				<form method="post" action="#">
@@ -53,160 +51,138 @@
 				</form>
 
                 <button class="bouton_rechercher" type="button">Rechercher</button>
+				<button class="fas fa-search" id="button-research2"></button>
 			</div>
+		</header>
+
+		<main>
+			<!-- La balise "section_filtre" comporte le filtre et la ligne d'information  -->
+			<section id="section_filtre">
+				<div id="filtre">
+					<p class="important">Filtres</p>
+					<ul>
+						<li class="important"> <div class="icone_filtre_arrondie"><i class="fas fa-money-bill-wave"></i></div> Économique </li>
+						<li class="important"> <div class="icone_filtre_arrondie"><i class="fas fa-child"></i></div> Familial </li>
+						<li class="important"> <div class="icone_filtre_arrondie"><i class="fas fa-heart"></i></div> Romantique </li>
+						<li class="important"> <div class="icone_filtre_arrondie"><i class="fas fa-dog"></i></div> Animaux autorisés </li>
+					</ul>
+				</div>
+
+				<div id="information">
+					<div id="icone_info_arrondie">
+						<i class="fas fa-info"></i>
+					</div>
+        	    	<p class="description">  Plus de 500 logements sont disponibles dans cette ville </p>
+				</div> 
+        	</section>
+
+        	<section>
+        	    <!-- La section "Hébergements à Marseille" comporte une liste d'article. -->
+				<h2> Hébergement a Marseille </h2>
+
+				<section id="Auberge_Cannebiere">
+					<img src="#" alt="Auberge_Cannebiere" />
+					<h2> Auberge La Cannebière </h2> 
+					<p> Nuit à partir de 25 euros </p>
+					<img src="#" alt="etoile4" />
+				</section>
 			
-
-            <!-- 3) Filtres : Comporte une liste de filtre. -->
-			<div id="Filtres">
-				<p class="important">Filtres</p>
-
-				<ul>
-					<li class="important"><i class="fas fa-money-bill-wave"></i>Économique </li>
-					<li class="important"><i class="fas fa-child"></i>Familial </li>
-					<li class="important"><i class="fas fa-heart"></i>Romantique </li>
-					<li class="important"><i class="fas fa-dog"></i>Animaux autorisés </li>
-				</ul>
-			</div>
-
-			<div id="Informations">
-				<i class="fas fa-info"></i>
-            	<p class="description">  Plus de 500 logements sont disponibles dans cette ville </p>
-			</div> 
-        </header>
-
-        <section>
-            <!-- La section "Hébergements à Marseille" comporte une liste d'article. -->
-
-			<h2> Hébergement a Marseille </h2>
-			<ul>
-				<li>
-					<article id="Auberge_Cannebiere">
-						<img src="#" alt="Auberge_Cannebiere" />
-						<h2> Auberge La Cannebière </h2> 
-						<p> Nuit à partir de 25 euros </p>
-						<img src="#" alt="etoile4" />
-					</article>
-				</li>
-				<li>
-					<article id="Hotel_port">
-						<img src="#" alt="Hotel_port" />
-						<h2> Hôtel du port </h2> 
-						<p> Nuit à partir de 52 euros </p>
-						<img src="#" alt="etoile5" />
-					</article>
-				</li>
-				<li>
-					<article id="Hotel_mouettes">
-						<img src="#" alt="Hotel_mouettes" />
-						<h2> Hôtel les mouettes </h2> 
-						<p> Nuit à partir de 76 euros  </p>
-						<img src="#" alt="etoile4" />
-					</article>
-				</li>
-
-                <li>
-					<article id="Hotel_de_la_mer">
-						<img src="#" alt="Hotel_de_la_mer" />
-						<h2> Hôtel de la mer </h2> 
-						<p> Nuit à partir de 46 euros </p>
-						<img src="#" alt="etoile3" />
-					</article>
-				</li>
-				<li>
-					<article id="Hotel_le_panier">
-						<img src="#" alt="Hotel_le_panier" />
-						<h2> Auberge Le Panier </h2> 
-						<p> Nuit à partir de 23 euros </p>
-						<img src="#" alt="etoile4" />
-					</article>
-				</li>
-				<li>
-					<article id="Hotel_chez_amira">
-						<img src="#" alt="Hotel_chez_amira" />
-						<h2> Hôtel chez Amina </h2> 
-						<p> Nuit à partir de 96 euros</p>
-						<img src="#" alt="etoile5" />
-					</article>
-				</li>
-			</ul>	
-			<p> Afficher plus </p>  
+				<section id="Hotel_port">
+					<img src="#" alt="Hotel_port" />
+					<h2> Hôtel du port </h2> 
+					<p> Nuit à partir de 52 euros </p>
+					<img src="#" alt="etoile5" />
+				</section>
 			
-			
-            <aside>
-                <!-- L'aside "Les plus populaires" est un complément à la section "hébergements à Marseille", il comporte une liste d'article. -->
-                <h2> Les plus populaires </h2>
-                <ul>
-                    <li>
-				    	<article id="Hotel_le_soleil_du_matin">
-							<img src="#" alt="Hotel_le_soleil_du_matin" />
-				    		<h2> Hôtel le soleil du matin</h2> 
-				    		<p> Nuit à partir de 128 euros </p>
-				    		<img src="#" alt="etoile5" />
-				    	</article>
-				    </li>
-				    <li>
-				    	<article id="Au_coeur_de_l_eau_chambres_hotes">
-							<img src="#" alt="Au_coeur_de_l_eau_chambres_hotes" />
-				    		<h2> Au coeur de l'eau Chambres d'hôtes </h2> 
-				    		<p> Nuit à partir de 71 euros</p>
-				    		<img src="#" alt="etoile4" />
-				    	</article>
-				    </li>
-                    <li>
-				    	<article id="Hotel_tout_bleu_et_blanc">
-							<img src="#" alt="Hotel_tout_bleu_et_blanc" />
-				    		<h2> Hotel Tout Bleu et Blanc </h2> 
-				    		<p> Nuit à partir de 68 euros</p>
-				    		<img src="#" alt="etoile4" />
-				    	</article>
-				    </li>
-		    	</ul>	
-            </aside>   
-        </section>
-        
-        <section>
-			<!-- La section "Activités à Marseille" comporte une liste d'article. -->
-			<h2> Les plus populaires </h2>
-			<ul>
-				<li>
-					<article id="Act_Vieux_Port">
-						<img src="#" alt="Act_Vieux_Port" />
-						<h2> Vieux Port</h2> 
-					</article>
-				</li>
-				<li>
-					<article id="Act_Fort_de_Pomegues">
-						<img src="#" alt="Act_Fort_de_Pomegues" />
-						<h2> Fort de Pomègues</h2> 
-					</article>
-				</li>
-				<li>
-					<article id="Act_Iles_du_Frioul">
-						<img src="#" alt="Act_Iles_du_Frioul" />
-						<h2> Iles du Frioul</h2> 
-					</article>
-				</li>
-				<li>
-					<article id="Act_Parc_National_des_Calanques">
-						<img src="#" alt="Act_Parc_National_des_Calanques" />
-						<h2> Parc National des Calanques</h2> 
-					</article>
-				</li>
-				<li>
-					<article id="Act_Notre_Dame_de_la_garde">
-						<img src="#" alt="Act_Notre_Dame_de_la_garde" />
-						<h2> Notre Dame de la garde</h2> 
-					</article>
-				</li>
-				<li>
-					<article id="Act_Parc_Longchamp">
-						<img src="#" alt="Act_Parc_Longchamp" />
-						<h2> Parc Longchamp</h2> 
-					</article>
-				</li>
-			</ul>	
+				<section id="Hotel_mouettes">
+					<img src="#" alt="Hotel_mouettes" />
+					<h2> Hôtel les mouettes </h2> 
+					<p> Nuit à partir de 76 euros  </p>
+					<img src="#" alt="etoile4" />
+				</section>
 
-		</section>
+				<section id="Hotel_de_la_mer">
+					<img src="#" alt="Hotel_de_la_mer" />
+					<h2> Hôtel de la mer </h2> 
+					<p> Nuit à partir de 46 euros </p>
+					<img src="#" alt="etoile3" />
+				</section>
+
+				<section id="Hotel_le_panier">
+					<img src="#" alt="Hotel_le_panier" />
+					<h2> Auberge Le Panier </h2> 
+					<p> Nuit à partir de 23 euros </p>
+					<img src="#" alt="etoile4" />
+				</section>
+
+				<section id="Hotel_chez_amira">
+					<img src="#" alt="Hotel_chez_amira" />
+					<h2> Hôtel chez Amina </h2> 
+					<p> Nuit à partir de 96 euros</p>
+					<img src="#" alt="etoile5" />
+				</section>	
+				<p> Afficher plus </p>  
+			<section>	
+
+        	<section>
+        	    <!-- L'aside "Les plus populaires" est un complément à la section "hébergements à Marseille", il comporte une liste d'article. -->
+        	    <h2> Les plus populaires </h2>
+				<section id="Hotel_le_soleil_du_matin">
+					<img src="#" alt="Hotel_le_soleil_du_matin" />
+					<h2> Hôtel le soleil du matin</h2> 
+					<p> Nuit à partir de 128 euros </p>
+					<img src="#" alt="etoile5" />
+				</section>
+			
+				<section id="Au_coeur_de_l_eau_chambres_hotes">
+					<img src="#" alt="Au_coeur_de_l_eau_chambres_hotes" />
+					<h2> Au coeur de l'eau Chambres d'hôtes </h2> 
+					<p> Nuit à partir de 71 euros</p>
+					<img src="#" alt="etoile4" />
+				</section>
+			
+				<section id="Hotel_tout_bleu_et_blanc">
+					<img src="#" alt="Hotel_tout_bleu_et_blanc" />
+					<h2> Hotel Tout Bleu et Blanc </h2> 
+					<p> Nuit à partir de 68 euros</p>
+					<img src="#" alt="etoile4" />
+				</section>
+        	</section>   
+		
+		
+        	<section>
+				<!-- La section "Activités à Marseille" comporte une liste d'article. -->
+				<h2> Les plus populaires </h2>
+
+				<section id="Act_Vieux_Port">
+					<img src="#" alt="Act_Vieux_Port" />
+					<h2> Vieux Port</h2> 
+				</section
+				<section id="Act_Fort_de_Pomegues">
+					<img src="#" alt="Act_Fort_de_Pomegues" />
+					<h2> Fort de Pomègues</h2> 
+				</section>
+				<section id="Act_Iles_du_Frioul">
+					<img src="#" alt="Act_Iles_du_Frioul" />
+					<h2> Iles du Frioul</h2> 
+				</section>
+
+				<section id="Act_Parc_National_des_Calanques">
+					<img src="#" alt="Act_Parc_National_des_Calanques" />
+					<h2> Parc National des Calanques</h2> 
+				</section>
+
+				<section id="Act_Notre_Dame_de_la_garde">
+					<img src="#" alt="Act_Notre_Dame_de_la_garde" />
+					<h2> Notre Dame de la garde</h2> 
+				</section>
+
+				<section id="Act_Parc_Longchamp">
+					<img src="#" alt="Act_Parc_Longchamp" />
+					<h2> Parc Longchamp</h2> 
+				</section>
+			</section>
+		</main>
 
         <!-- On décide de découper le footer en 3 parties:
             - A propos: Liste de 3 liens.

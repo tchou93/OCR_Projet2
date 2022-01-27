@@ -1,0 +1,69 @@
+body {
+    background-color: green;
+}
+
+header, main, footer  {
+    max-width: 767px;
+    max-height: auto;
+}
+
+
+/* -------------------------------- */
+/* Header: introduction de la page  */
+/* -------------------------------- */
+
+#button-research2 {
+    visibility:visible;
+    position: absolute;
+    bottom: 0;
+    right: -3px;
+    width: 44px;
+    height: 44px;
+
+    color: white;
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    background-color: #0065fc;
+}
+
+#button-research2:hover {
+    cursor: pointer;
+}
+
+.bouton_rechercher {
+    display: none;
+}
+
+#barre_ville {
+    right: 29px;
+}
+
+#barre_recherche {
+    width: 280px;
+}
+
+nav {
+    flex-direction: column;
+}
+
+nav ul {
+    /* justify-content: space-around; */
+    padding-top: 0;
+
+}
+
+#logo_booki {
+    display: flex;
+    justify-content: center;
+}
+
+#nav_booki {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a:hover {
+    border-top:none;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #0065FC;
+}

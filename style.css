@@ -6,13 +6,13 @@
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 10px;
+    margin: 0;
 }
 
 /* Les balises parents et enfant de html auront la propriété box-sizing: border-box */
 html {
     box-sizing: border-box;
-  }
-
+}
 
 *, *:before, *:after {
     box-sizing: inherit;
@@ -34,65 +34,74 @@ html {
 }
 
 .description {
-    font-size: 13px;
+    font-size: 14px;
 }
 
-/* ------------------------------------------------------------- */
-/* Header (1): Logo Booki + navigation (hébergements, Activités) */
-/* ------------------------------------------------------------- */
-
-/* Tous les groupes d'élement du header vont être aligné sur une hauteur de 700px */
-header {
-    width: 100%;
-    height: 350px;
-    display: flex;
-    flex-direction:column;
+/* Gestion de la taille des balises sémantiques */
+nav, header, main  {
+    max-width: 992px;
+    max-height: 100%; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
+footer {
+    max-width: 100%;
+}
+
+/* ------------------------------- */
+/* Nav =  Logo Booki + navigation  */
+/* ------------------------------- */
+
+/* Tous les groupes d'élement du header vont être aligné sur une largeur max de 992px */
 /* Le logo booki et la barre de navigation sont de part et d'autre de l'écran */
-#logo_nav_booki {
+
+nav {
     display: flex;
     justify-content: space-between;
-}
-
-#logo_booki {
-    height: 75px;
-    padding-top: 25px;
+    margin-bottom: 20px;
 }
 
 /* width: auto sert à garder une dimension proportionnelle de l'image */
+#logo_booki {
+    height: 70px;
+    padding-top: 25px;
+    margin-top: 10px ;
+}
+
 #logo_booki img {
     width: auto; 
     max-height: 100%; 
 }
 
 /* Nous voulons que les élements de navigation soient alignés */
-#logo_nav_booki nav ul {
+nav ul {
     display: flex;
-    height: 10px;
     list-style-type: none;
-    padding-top: 40px;
+    padding-top: 35px;
+    padding-left: 0;
 }
 
-/* Les bordures ont été choisi de tel sorte pour penser au surlignage  */
-#logo_nav_booki a {
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 15px ;
+/* Les bordures internes ont été choisi de tel sorte pour penser au surlignage  */
+nav a {
+    padding-left: 20px;
+    padding-right: 20px;
     color: black;
     text-decoration: none;
+    padding-top: 43px;
 }
 
-
-#logo_nav_booki a:hover {
+nav a:hover {
     text-decoration: none;
     color: #0065fc;
-    padding-top: 50px;
-    padding-left: 30px;
+    padding-top: 43px;
     border-top: 2px solid #0065FC;
 }
 
-/* Header (2): Texte + barre de recherche ville */
+
+/* -------------------------------- */
+/* Header: introduction de la page  */
+/* -------------------------------- */
 
 #texte_hebergement p {
     margin-top: 10px;
@@ -116,7 +125,7 @@ l'icone, Input text et Bouton Rechercher */
     position: absolute;
     bottom: 0;
     width:40px;
-    height: 40px;
+    height: 44px;
     text-align: center;
 
     font-size: 16px;
@@ -131,9 +140,9 @@ l'icone, Input text et Bouton Rechercher */
 #barre_ville {
     position: absolute;
     bottom: 0;
-    right: 177px;
-    width: 183px;
-    height: 40px;
+    right: 149px;
+    width: 211px;
+    height: 44px;
 
     padding-left: 11px;
     font-weight: bold;
@@ -147,9 +156,9 @@ l'icone, Input text et Bouton Rechercher */
 .bouton_rechercher {
     position: absolute;
     bottom: 0;
-    right: 57px;
-    width: 120px;
-    height: 40px;
+    right: 28px;
+    width: 121px;
+    height: 44px;
 
     color: white;
     border: none;
@@ -157,75 +166,105 @@ l'icone, Input text et Bouton Rechercher */
     background-color: #0065fc;
 }
 
+#button-research2 {
+    visibility:hidden;
+}
+
+.bouton_rechercher:hover {
+    cursor: pointer;
+}
+
+/* ---------------- */
+/* Section: Filtre  */
+/* -----------------*/
+
 /* Header (3): Filtres  */
 
 /* Utilisation de Flexible pour aligner les filtres */
-#Filtres {
+#filtre {
     display: flex;
-}
-
-#Filtres p
-{
-    margin-top: 32px;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 /* Utilisation de flex-wrap pour faciliter l'affichage lors de la
 réduction de fenêtre */
 
-#Filtres ul {
+
+#filtre ul {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    margin-top: 5px;
-    padding-left: 10px;
+    padding-left: 20px;
 }
-
-#Filtres ul li {
+#filtre ul li {
+    display: flex;
+    margin-right: 13px;
+    align-items: center;
     height: 44px;
-    padding-right: 11px;
-    margin-top: 13px;
-    margin-left: 24px;
-
+    margin-top: 10px;
+    padding-right: 12px;
+    width: auto;
     border: solid 2px #c2bdbd8c;
     border-radius: 22px;
+
 }
 
-#Filtres .fas {
-    padding: 12px;
-    padding-top: 17px;
-    margin-left: -3px;
-    margin-top: -2px;
-    margin-right: 7px;
+#filtre p {
+    margin-top: 18px;
+}
 
+.icone_filtre_arrondie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    margin-right: 10px;
+    margin-left: -3px;
     border-radius: 50%;
     background-color: #DEEBFF;
     color: #0065fc;
 }
 
-#Filtres ul li:hover {
+#filtre ul li:hover {
     background: #0065FC;
     color: white;
+    cursor: pointer;
 }
   
 
 /* Utilisation de flexbox pour aligner l'icone avec le texte */
-#Informations {
+#information {
     display: flex;
-    max-width: 400px; 
-    height: 30px;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+#icone_info_arrondie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border: solid 1px #c2bdbd8c;
+    border-radius: 50%;
 }
 
 /* Utilisation de border-radius: 50% pour arrondir les contours */
 .fa-info {
     padding: 7px 11px 7px 11px;
-    margin-right: 10px;
-    margin-top: 4px;
-
     color: #0065fc;
-    font-size: 10px;
-    border: solid 1px #c2bdbd8c;
-    border-radius: 50%;
+    font-size: 9px;
   }
+
+#information p {
+    margin-left: 5px;
+}
 
 
 
