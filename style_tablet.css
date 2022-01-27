@@ -1,8 +1,8 @@
-body {
+/* body {
  
     background-color: rgb(68, 0, 255);
 
-}
+} */
 
 header, main, footer  {
     max-width: 991px;
@@ -16,5 +16,8 @@ nav {
     max-height: auto;
 }
 
+#logo_booki img {
+    margin-left: 4%;
+}
 
 

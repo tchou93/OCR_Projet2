@@ -29,7 +29,7 @@ html {
 }
 
 .important, .bouton_rechercher, #barre_ville {
-    font-size: 15px;
+    font-size: 16px;
     font-weight:bold;
 }
 
@@ -59,7 +59,7 @@ footer {
 nav {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 /* width: auto sert à garder une dimension proportionnelle de l'image */
@@ -75,11 +75,9 @@ nav {
 }
 
 /* Nous voulons que les élements de navigation soient alignés */
-nav ul {
+
+#nav_booki {
     display: flex;
-    list-style-type: none;
-    padding-top: 35px;
-    padding-left: 0;
 }
 
 /* Les bordures internes ont été choisi de tel sorte pour penser au surlignage  */
@@ -91,10 +89,17 @@ nav a {
     padding-top: 43px;
 }
 
-nav a:hover {
+nav a:nth-child(1) {
+    color: #0065fc;
+    padding-top: 41px;
+    border-top: 2px solid #0065FC;
+}
+
+
+nav a:nth-child(2):hover {
     text-decoration: none;
     color: #0065fc;
-    padding-top: 43px;
+    padding-top: 41px;
     border-top: 2px solid #0065FC;
 }
 
