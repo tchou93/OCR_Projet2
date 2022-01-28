@@ -11,6 +11,11 @@ nav {
     flex-direction: column;
 }
 
+nav {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 #logo_booki {
     display: flex;
     justify-content: center;
@@ -34,11 +39,9 @@ nav a:nth-child(2) {
 nav a {
     flex:1;
     text-align: center;
-    /* position:relative; */
 }
 
 nav a:nth-child(2):hover {
-    /* position:absolute; */
     border-bottom-color:#0065FC ;
     border-top-color:white;
 }
@@ -91,3 +94,28 @@ nav a:nth-child(2):hover {
     margin-top: -16px;
     padding-left: 0;
 }
+
+/* ---------------------------------- */
+/* Section: Hébergement de Marseille  */
+/* -----------------------------------*/
+
+
+#hebergement_marseille {
+    height: auto;
+}
+
+#container_hebergement {
+    max-width: 767px;
+    max-height: auto;
+}
+
+#container_hebergement section {
+    width: 100%;
+    max-height: 100%;
+}
+
+.card {
+    width: 100%;
+    max-height:400px;
+}
+
