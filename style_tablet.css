@@ -1,4 +1,4 @@
-nav, header, #section_filtre, #hebergement_marseille,#hebergement_marseille_pupulaire, #activite_marseille, footer  {
+nav, header, #section_filtre, #hebergement_marseille,#hebergement_marseille_pupulaire, #activite_marseille  {
     max-width: 991px;
     max-height: auto;
     margin-left: 4%;
@@ -47,4 +47,12 @@ nav, header, #section_filtre, #hebergement_marseille,#hebergement_marseille_pupu
 
 #txt_pupulaire_icone h2{
     padding-left: 2%;
+}
+
+/* --------- */
+/* Footer    */
+/* --------- */
+
+.footer {
+    padding-left: 4%;
 }
