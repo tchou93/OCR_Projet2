@@ -1,8 +1,3 @@
-header, main, footer  {
-    max-width: 767px;
-    max-height: auto;
-}
-
 /* ------------------------------- */
 /* Nav =  Logo Booki + navigation  */
 /* ------------------------------- */
@@ -102,14 +97,42 @@ nav a:nth-child(2):hover {
 
 #hebergement_marseille {
     height: auto;
+    background-color:white;
+    padding: 0;
+    border-radius: 0;
 }
 
-#container_hebergement {
-    max-width: 767px;
-    max-height: auto;
-}
 
-#container_hebergement section {
+.card {
     width: 100%;
-    max-height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* -------------------------------------------- */
+/* Section: Hébergement pupulaire de Marseille  */
+/* ---------------------------------------------*/
+
+#hebergement_marseille_pupulaire {    
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    /* padding: 0; */
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 4%;
+    padding-right:4%;
+}
+
+#container_populaire {
+    flex-direction: column;
+}
+
+.card_pupulaire {
+    width: 100%;
+}
+
+#txt_pupulaire_icone h2, #hebergement_marseille h2{
+    padding-left:  0;
 }
