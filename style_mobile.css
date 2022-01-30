@@ -103,7 +103,7 @@ nav a:nth-child(2):hover {
 }
 
 
-.card {
+.lien_card {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
@@ -129,7 +129,7 @@ nav a:nth-child(2):hover {
     flex-direction: column;
 }
 
-.card_pupulaire {
+.lien_card_pupulaire {
     width: 100%;
 }
 
@@ -148,34 +148,34 @@ nav a:nth-child(2):hover {
     margin-bottom: 7px;
 }
 
-.activite {
+.lien_activite {
     width: 100%; 
     margin-top: 7px;
     margin-bottom: 7px;
     margin-right: 0;
 }
 
-.activite:nth-child(1) {
+.lien_activite:nth-child(1) {
     height:160px;
 }
 
-.activite:nth-child(2) {
+.lien_activite:nth-child(2) {
     height:160px;
 }
 
-.activite:nth-child(3) {
+.lien_activite:nth-child(3) {
     height:160px;
 }
 
-.activite:nth-child(4) {
+.lien_activite:nth-child(4) {
     height:160px;
 }
 
-.activite:nth-child(5) {
+.lien_activite:nth-child(5) {
     height:160px;
 }
 
-.activite:nth-child(6) {
+.lien_activite:nth-child(6) {
     height:160px;
 }
 

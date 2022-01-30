@@ -22,7 +22,7 @@ nav, header, #section_filtre, #hebergement_marseille,#hebergement_marseille_pupu
     width: 92%;
 }
 
-.card {
+.lien_card {
     width: 31%;
     height: 160px;
 }
@@ -40,7 +40,7 @@ nav, header, #section_filtre, #hebergement_marseille,#hebergement_marseille_pupu
     flex-direction: row;
 }
 
-.card_pupulaire {
+.lien_card_pupulaire {
     width: 31%;
     height: 120px;
 }
