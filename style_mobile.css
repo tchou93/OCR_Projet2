@@ -137,6 +137,31 @@ nav a:nth-child(2):hover {
     padding-left:  0;
 }
 
+.lien_card:nth-child(1) .img_hebergement {
+    content:url(images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+}
+
+.lien_card:nth-child(2) .img_hebergement {
+    content:url(images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+}
+
+.lien_card:nth-child(3) .img_hebergement {
+    content:url(images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+}
+
+.lien_card:nth-child(4) .img_hebergement {
+    content:url(images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+}
+
+.lien_card:nth-child(5) .img_hebergement {
+    content:url(images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+}
+
+.lien_card:nth-child(6) .img_hebergement {
+    content:url(images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+}
+
+
 /* ---------------------------------- */
 /* Section: Activités à Marseille     */
 /* -----------------------------------*/
@@ -177,6 +202,30 @@ nav a:nth-child(2):hover {
 
 .lien_activite:nth-child(6) {
     height:160px;
+}
+
+.lien_activite:nth-child(1) .activite_image {
+    content:url(images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+}
+
+.lien_activite:nth-child(2) .activite_image {
+    content:url(images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+}
+
+.lien_activite:nth-child(3) .activite_image {
+    content:url(images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+}
+
+.lien_activite:nth-child(4) .activite_image {
+    content:url(images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+}
+
+.lien_activite:nth-child(5) .activite_image {
+    content:url(images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+}
+
+.lien_activite:nth-child(6) .activite_image {
+    content:url(images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
 }
 
 /* Footer */
