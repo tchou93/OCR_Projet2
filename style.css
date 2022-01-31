@@ -25,22 +25,22 @@ html {
 
 h2 {
     font-size: 20px;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .afficher_plus{
     font-size: 17px;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .important, .bouton_rechercher, #barre_ville {
     font-size: 16px;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .nom_hotel_activite {
     font-size: 14px;
-    font-weight:bold;  
+    font-weight: bold;  
 }
 
 .description {
@@ -48,7 +48,7 @@ h2 {
 }
 
 /* Gestion de la taille des balises sémantiques */
-nav, header, main  {
+nav, header, main, #section_filtre {
     max-width: 992px;
     max-height: 100%; 
     margin-left: auto;
@@ -69,22 +69,21 @@ footer {
 nav {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 /* width: auto sert à garder une dimension proportionnelle de l'image */
 #logo_booki {
     height: 70px;
     padding-top: 25px;
-    margin-top: 10px ;
+    margin-top: 10px;
 }
 
 #logo_booki img {
     width: auto; 
-    max-height: 100%; 
+    height: 100%; 
 }
 
-/* Nous voulons que les élements de navigation soient alignés */
 
 #nav_booki {
     display: flex;
@@ -92,25 +91,22 @@ nav {
 
 /* Les bordures internes ont été choisi de tel sorte pour penser au surlignage  */
 nav a {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 43px 20px 0 20px;
     color: black;
     text-decoration: none;
-    padding-top: 43px;
 }
 
 nav a:nth-child(1) {
-    color: #0065fc;
     padding-top: 41px;
+    color: #0065fc;
     border-top: 2px solid #0065FC;
 }
 
 
 nav a:nth-child(2):hover {
-    text-decoration: none;
-    color: #0065fc;
     padding-top: 41px;
     border-top: 2px solid #0065FC;
+    color: #0065fc;
 }
 
 
@@ -119,8 +115,7 @@ nav a:nth-child(2):hover {
 /* -------------------------------- */
 
 #texte_hebergement p {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0 10px 0
 }
 
 #texte_hebergement h2 {
@@ -130,7 +125,6 @@ nav a:nth-child(2):hover {
 
 /* Dimension et positionnement général de la barre de recherche 
 (icone + Input text + Bouton Rechercher) */
-
 #barre_recherche {
     width: 400px;
     height: 48px;
@@ -140,54 +134,48 @@ nav a:nth-child(2):hover {
 
 /* On se sert de la position absolue de la barre de recherche pour positionner
 l'icone, Input text et Bouton Rechercher */
-
 #container_ico_rechercher {
-    position: absolute;
-    bottom: 0;
-    width:40px;
+    width: 40px;
     height: 44px;
-    text-align: center;
-
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 15px 0 0 15px;
     font-size: 16px;
     background-color: #F2F2F2;
-    border-radius: 15px 0 0 15px;
-}
-
-.fa-map-marker-alt {
-    margin-top: 13px;
 }
 
 #barre_ville {
-    position: absolute;
-    bottom: 0;
-    right: 149px;
     width: 211px;
     height: 44px;
-
+    right: 149px;
+    bottom: 0;
+    position: absolute;
     padding-left: 11px;
-    font-weight: bold;
     border: 1px solid #F2F2F2;
+    font-weight: bold;
 }
 
 #barre_ville::placeholder {
- color: black;
+    color: black;
 }
 
 .bouton_rechercher {
-    position: absolute;
-    bottom: 0;
-    right: 28px;
     width: 121px;
     height: 44px;
-
-    color: white;
+    right: 28px;
+    bottom: 0;
+    position: absolute;
     border: none;
     border-radius: 0 15px 15px 0;
+    color: white;
     background-color: #0065fc;
 }
 
 #button-research-mobile {
-    visibility:hidden;
+    visibility: hidden;
 }
 
 .bouton_rechercher:hover {
@@ -200,22 +188,18 @@ l'icone, Input text et Bouton Rechercher */
 
 /* Header (3): Filtres  */
 
-/* Utilisation de Flexible pour aligner les filtres */
 #filtre {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
-    margin-top: 15px;
+    margin: 15px 0 15px 0;
 }
 
 #filtre p {
-    margin:0;
+    margin: 0;
 }
 
 /* Utilisation de flex-wrap pour faciliter l'affichage lors de la
 réduction de fenêtre */
-
-
 #filtre ul {
     display: flex;
     flex-wrap: wrap;
@@ -223,27 +207,26 @@ réduction de fenêtre */
     list-style-type: none;
     padding-left: 20px;
 }
+
 #filtre ul li {
-    display: flex;
-    margin-right: 13px;
-    align-items: center;
-    height: 44px;
-    padding-right: 12px;
-    /* padding-right: 12px; */
     width: auto;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    padding-right: 12px;
+    margin-right: 13px;
     border: solid 2px #c2bdbd8c;
     border-radius: 22px;
 }
 
 .icone_filtre_arrondie {
+    width: 44px;
+    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 44px;
-    width: 44px;
-    margin-right: 10px;
-    margin-left: -3px;
     border-radius: 50%;
+    margin: 0 10px 0 -3px;
     background-color: #DEEBFF;
     color: #0065fc;
 }
@@ -255,31 +238,29 @@ réduction de fenêtre */
 }
   
 
-/* Utilisation de flexbox pour aligner l'icone avec le texte */
+/* Alignement de l'icone avec le texte */
 #information {
-    display: flex;
-    align-items: center;
     width: 100%;
     height: 20px;
-    padding-top: 5px;
-    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    padding-top: 5px 0 10px 0;
 }
 
 #icone_info_arrondie {
+    height: 20px;
+    width: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20px;
-    width: 20px;
     border: solid 1px #c2bdbd8c;
     border-radius: 50%;
 }
 
 /* Utilisation de border-radius: 50% pour arrondir les contours */
 .fa-info {
-    padding: 7px 11px 7px 11px;
     color: #0065fc;
-    font-size: 9px;
+    font-size: 10px;
   }
 
 #information p {
@@ -287,124 +268,107 @@ réduction de fenêtre */
 }
 
 #hebergement {
+    max-width: 992px;
     display: flex;
     justify-content: space-between;
-    max-width: 992px;
-    max-height: 100%; 
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding: 20px 0 20px 0;
 }
 /* ---------------------------------- */
 /* Section: Hébergement de Marseille  */
 /* -----------------------------------*/
 
 #section_hebergement_marseille {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-
     width: 65%;
     height: 483px;
-
-    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
     padding: 1%;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 15px;
+    background-color: #F2F2F2;
 }
 
 #container_hebergement {
     display: flex;
     flex-wrap: wrap;  
-    justify-content: center;
 }
 
 .lien_card {
     width: 30%;
-    height:160px;
-    text-decoration: none;
+    height: 160px;
     margin: 1.65%;
+    text-decoration: none;
     color: black;
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 101, 252, 0.2);
-    transition: 0.3s;
     width: 100%;
-    height:100%;
-    padding: 5px;
-    border-radius: 15px 15px 15px 15px;
-    background-color: white;
+    height: 100%;
     display: flex;
     flex-direction: column;
-
+    padding: 5px;
+    border-radius: 15px;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 101, 252, 0.2);
+    background-color: white;
 }
   
 #section_hebergement_marseille h2 {
     margin-left: 1.65%;
 }
 
-#cont_afficher_plus
-{
-    height:100%;
+#cont_afficher_plus {
     display: flex;
     align-items: center;
+    height: 100%;
 }
 
 .afficher_plus {
     color: black;
     text-decoration: none;
-    font-weight:bold;
+    font-weight: bold;
     margin-left: 1.65%;
 }
 
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 101, 252, 0.8);
-    /* cursor: pointer; */
 }
   
 .img_hebergement {
-    width:100%;
+    width: 100%;
     height: 60%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
 
 .container_card {
-    width:100%;
-    height: 40%;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
     padding-left: 3%;
 }
 
-.container_card p, i
-{
-  margin-top: 1%;
-  margin-bottom: 0;
+.container_card p, i {
+    margin: 1% 0 0 0;
 }
-
-
 
 /* -------------------------------------------- */
 /* Section: Hébergement pupulaire de Marseille  */
 /* ---------------------------------------------*/
-#section_hebergement_marseille_pupulaire
-{
+#section_hebergement_marseille_pupulaire {
     width: 32%;
     height: 483px;
     display: flex;
     flex-direction: column;
-    
-    background-color: #F2F2F2;
-    /* justify-content: space-between; */
     padding: 1%;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 15px;
+    background-color: #F2F2F2;
 }
 
-#txt_pupulaire_icone{
-    padding-left:  3%;
-    padding-right:  3%;
+#txt_pupulaire_icone {
+    padding: 0 3% 0 3%
 }
 
 #txt_pupulaire_icone {
@@ -420,70 +384,61 @@ réduction de fenêtre */
 
 .fa-chart-line {
     font-size: 20px;
-    text-align: center;
 }
 
 #container_populaire {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .lien_card_pupulaire {
-    color: black;
-    text-decoration: none;
     width: 94%;
     height:29%;
+    color: black;
+    text-decoration: none;
     margin: 3%;
-    /* margin-top: 17px; */
 }
 
 .card_pupulaire {
+    width: 100%;
+    height: 100%;
     display: flex;
+    padding: 5px;
+    border-radius: 15px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 101, 252, 0.2);
-
     transition: 0.3s;
-    width:100%;
-    height:100%;
-    padding: 5px;
-    border-radius: 15px 15px 15px 15px;
 }
 
-
 .resize {
-    width:70%;
+    width: 70%;
     height: 100%;
 } 
 
 .img_hebergement_populaire {
-  width:100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 15px 0 0 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    border-radius: 15px 0 0 15px;
 }
   
 .card_pupulaire:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 101, 252, 0.8);
-  /* cursor: pointer; */
+    box-shadow: 0 8px 16px 0 rgba(0, 101, 252, 0.8);
 }
 
 .container_card_pupulaire {
-  width:100%;
-  height:90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-left: 3%;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 3%;
 }
 
-.container_card_pupulaire p, i
-{
-  margin-top: 1%;
-  margin-bottom: 1%;
+.container_card_pupulaire p, i {
+    margin: 1% 0 1% 0;
 }
 
 /* ---------------------------------- */
@@ -491,64 +446,56 @@ réduction de fenêtre */
 /* -----------------------------------*/
 
 #section_activite_marseille {
-    padding-top: 10px;
-    padding-bottom: 40px;
+    padding: 10px 0 40px 0;
 }
 
 .group_activite {
-    width:100%;
-    height:350px;
+    width: 100%;
+    height: 350px;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 /* Activité 1 */
 
 .lien_activite {
     width: 22%;
-    height:350px;
-    color: black;
-    text-decoration: none;
+    height: 350px;
     margin-right: 4%;
+    text-decoration: none;
+    color: black;
 }
+
 .activite {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height:100%;
+    border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 101, 252, 0.2);
     transition: 0.3s;
-    border-radius: 15px 15px 15px 15px;
-
 }
 
 .activite_container_image {
-    width:100%;
-    height:calc(100% - 40px);
+    width: 100%;
+    height: calc(100% - 40px);
 }
 
-.activite_image
-{
-    width:100%;
-    height:100%;
+.activite_image {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
 
 .activite_container_titre {
+    width: 100%;
+    height: 40px;
     display: flex;
     align-items: center;
-    width:100%;
-    height: 40px;
     padding-left: 15px;
-
-}
-
-.nom_hotel_activite {
-    margin: 0;
 }
 
 .activite:hover {
@@ -557,25 +504,24 @@ réduction de fenêtre */
 
 /* Activité 2 */
 .lien_activite:nth-child(2) {
-    height:195px;
+    height: 195px;
 }
 
 /* Activité 4 à les mêmes propriétés que l'activité 1 */
 
-
 /* Activité 3 */
 .lien_activite:nth-child(3) {
-    height:125px;
+    height: 125px;
 }
 
 /* Activité 5 */
 .lien_activite:nth-child(5) {
-    height:155px;
+    height: 155px;
 }
 
 /* Activité 6 */
 .lien_activite:nth-child(6) {
-    height:165px;
+    height: 165px;
 }
 
 /* --------- */
@@ -583,14 +529,10 @@ réduction de fenêtre */
 /* --------- */
 
 footer {
-    width: 100%; 
-    height: auto; 
-    padding-top: 10px;
-    background-color: #F2F2F2;
     display: flex;
     justify-content: center;
-    margin-left: 0;
-    margin-right: 0;
+    padding-top: 10px;
+    background-color: #F2F2F2;
 }
 
 .footer_list {
@@ -598,38 +540,38 @@ footer {
     width: 992px; 
 }
 
-.footer {
+.footer_container {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
 
-.footer ul {
-    list-style-type: none;
+.footer_container ul {
     padding-left: 0;
+    list-style-type: none;
 }
 
-.footer li {
+.footer_container li {
     padding-top: 6px;
 }
 
-.footer a {
+.footer_container a {
     text-decoration: none;
     color: black;
 }
 
-.footer:nth-of-type(1) {
-    flex:1;
+.footer_container:nth-of-type(1) {
+    flex: 1;
 }
 
-.footer:nth-of-type(2) {
-    flex:1;
+.footer_container:nth-of-type(2) {
+    flex: 1;
 }
 
-.footer:nth-of-type(3) {
-    flex:1;
+.footer_container:nth-of-type(3) {
+    flex: 1;
 }
 
-.footer a:hover {
+.footer_container a:hover {
     color: #0065fc;
 }

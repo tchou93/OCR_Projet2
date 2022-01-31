@@ -20,20 +20,20 @@ nav {
     font-size: 16px;
 }
 
+nav a {
+    flex:1;
+    text-align: center;
+}
+
 nav a:nth-child(1) {
     padding-bottom: 10px;
     border-bottom: 4px solid #0065FC;
-    border-top: 2px solid #ffffff;
+    border-top: none; 
 }
 
 nav a:nth-child(2) {
     padding-bottom: 10px;
     border-bottom: 4px solid #c2bdbd8c;
-}
-
-nav a {
-    flex:1;
-    text-align: center;
 }
 
 nav a:nth-child(2):hover {
@@ -47,16 +47,15 @@ nav a:nth-child(2):hover {
 /* -------------------------------- */
 
 #button-research-mobile {
-    visibility:visible;
-    position: absolute;
-    bottom: 0;
-    right: -3px;
     width: 44px;
     height: 44px;
-
-    color: white;
+    right: -3px;
+    bottom: 0;
+    position: absolute;
+    visibility:visible;
     border: none;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 15px;
+    color: white;
     background-color: #0065FC;
 }
 
@@ -81,7 +80,6 @@ nav a:nth-child(2):hover {
 /* -----------------*/
 
 #filtre {
-    
     align-items: flex-start;
     flex-direction: column;
 }
@@ -98,12 +96,11 @@ nav a:nth-child(2):hover {
 /* Section: Hébergement de Marseille  */
 /* -----------------------------------*/
 
-
 #section_hebergement_marseille {
     height: auto;
-    background-color:white;
     padding: 0;
     border-radius: 0;
+    background-color:white;
 }
 
 #section_hebergement_marseille h2 {
@@ -112,8 +109,7 @@ nav a:nth-child(2):hover {
 
 .lien_card {
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 1.65% 0 1.65% 0;
 }
 
 /* -------------------------------------------- */
@@ -122,12 +118,8 @@ nav a:nth-child(2):hover {
 
 #section_hebergement_marseille_pupulaire {    
     width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    /* padding: 0; */
     border-radius: 0;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
     padding: 4%;
 }
 
@@ -137,11 +129,11 @@ nav a:nth-child(2):hover {
 
 .lien_card_pupulaire {
     width: 100%;
+    margin: 1.65% 0 1.65% 0;
 }
 
 #txt_pupulaire_icone {
-    padding-left:  0;
-    padding-right:  0;
+    padding: 0;
 }
 
 .lien_card:nth-child(1) .img_hebergement {
@@ -181,15 +173,11 @@ nav a:nth-child(2):hover {
 .group_activite {
     flex-wrap: nowrap;
     height:auto;
-    margin-top: 7px;
-    margin-bottom: 7px;
 }
 
 .lien_activite {
     width: 100%; 
-    margin-top: 7px;
-    margin-bottom: 7px;
-    margin-right: 0;
+    margin: 1.65% 0 1.65% 0;
 }
 
 .lien_activite:nth-child(1) {
@@ -244,5 +232,4 @@ nav a:nth-child(2):hover {
 
 .footer_list {
     flex-direction: column;
-    /* max-width: 768px; */
 }

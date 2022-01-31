@@ -52,27 +52,27 @@
 			</div>
 		</header>
 
-		<main>
-			<!-- La balise "section_filtre" comporte le filtre et la ligne d'information  -->
-			<section id="section_filtre">
-				<div id="filtre">
-					<p class="important">Filtres</p>
-					<ul>
-						<li class="important"> <div class="icone_filtre_arrondie"><i class="fas fa-money-bill-wave"></i></div> Économique </li>
-						<li class="important"> <div class="icone_filtre_arrondie"><i class="fas fa-child"></i></div> Familial </li>
-						<li class="important"> <div class="icone_filtre_arrondie"><i class="fas fa-heart"></i></div> Romantique </li>
-						<li class="important"> <div class="icone_filtre_arrondie"><i class="fas fa-dog"></i></div> Animaux autorisés </li>
-					</ul>
+
+		<!-- La balise "section_filtre" comporte le filtre et la ligne d'information  -->
+		<section id="section_filtre">
+			<div id="filtre">
+				<p class="important">Filtres</p>
+				<ul>
+					<li class="important"> <div class="icone_filtre_arrondie"><i class="fas fa-money-bill-wave"></i></div> Économique </li>
+					<li class="important"> <div class="icone_filtre_arrondie"><i class="fas fa-child"></i></div> Familial </li>
+					<li class="important"> <div class="icone_filtre_arrondie"><i class="fas fa-heart"></i></div> Romantique </li>
+					<li class="important"> <div class="icone_filtre_arrondie"><i class="fas fa-dog"></i></div> Animaux autorisés </li>
+				</ul>
+			</div>
+			<div id="information">
+				<div id="icone_info_arrondie">
+					<i class="fas fa-info"></i>
 				</div>
+            	<p class="description">  Plus de 500 logements sont disponibles dans cette ville </p>
+			</div> 
+        </section>
 
-				<div id="information">
-					<div id="icone_info_arrondie">
-						<i class="fas fa-info"></i>
-					</div>
-        	    	<p class="description">  Plus de 500 logements sont disponibles dans cette ville </p>
-				</div> 
-        	</section>
-
+		<main>
 			<div id="hebergement">
 				<!-- La section "hébergements à Marseille" comporte plusieurs sections représentant les logements et les prix -->
         		<section id="section_hebergement_marseille">
@@ -175,7 +175,7 @@
 							</section>
 						</a>						
 					</div>
-					
+
 					<div id="cont_afficher_plus">
 						<a class="afficher_plus" href="#">Afficher plus </a>
 					</div>
@@ -332,7 +332,7 @@
 		<footer>
 			<div class="footer_list">
 				<!-- A propos: Liste de 3 liens. -->
-				<div class="footer">
+				<div class="footer_container">
 					<p class="nom_hotel_activite">A propos</p>
 					<ul>
 						<li><a href="#">Fonctionnement du site</a></li>
@@ -342,7 +342,7 @@
 				</div>
 
 				<!-- - Nos Hébergements: Liste de 2 liens. -->
-				<div class="footer">
+				<div class="footer_container">
 					<p class="nom_hotel_activite"> Nos hébergements</p>
 					<ul>
 						<li><a href="#">Charte qualité</a></li>
@@ -351,7 +351,7 @@
 				</div>
 
 				<!-- - Assistance: Liste de 2 liens. -->
-				<div class="footer">
+				<div class="footer_container">
 					<p class="nom_hotel_activite"> Assistance</p>
 					<ul>
 						<li><a href="#">Centre d'aide</a></li>
