@@ -11,21 +11,21 @@
 		<link rel="stylesheet" media="screen and (max-width: 991px)" href="style_tablet.css" /> 
 		<link rel="stylesheet" media="screen and (max-width: 767px)" href="style_mobile.css" /> 
 
-		<!-- Google Fonts : Police Raleway-->
+		<!-- Gestion de la police Raleway -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     </head>
 
     <body>
-		<!-- La balise "nav": Logo Booki + navigation (hébergements, Activités) -->
+		<!-- La balise "nav" comporte le logo Booki et la navigation (hébergements, Activités) -->
         <nav>
 			<div id="logo_booki">
 				<img src="images/logo/Booki@3x.png" alt="Logo de Booki" />
 			</div>
 			<div id="nav_booki">
 				<a class="description" href="#hebergement">Hébergements</a>
-				<a class="description" href="#activite_marseille">Activités</a>
+				<a class="description" href="#section_activite_marseille">Activités</a>
 			</div>
 		</nav>
 
@@ -48,7 +48,7 @@
 				</form>
 
                 <button class="bouton_rechercher" type="button">Rechercher</button>
-				<button class="fas fa-search" id="button-research2"></button>
+				<button class="fas fa-search" id="button-research-mobile"></button>
 			</div>
 		</header>
 
@@ -74,8 +74,8 @@
         	</section>
 
 			<div id="hebergement">
-        		<section id="hebergement_marseille">
-        		    <!-- La section "Hébergements à Marseille" comporte une liste d'article. -->
+				<!-- La section "hébergements à Marseille" comporte plusieurs sections représentant les logements et les prix -->
+        		<section id="section_hebergement_marseille">
 					<h2> Hébergements à Marseille </h2>
 					<div id="container_hebergement">
 						<a class="lien_card" href="">
@@ -175,11 +175,14 @@
 							</section>
 						</a>						
 					</div>
-					<a class="afficher_plus" href="#">Afficher plus </a>
+					
+					<div id="cont_afficher_plus">
+						<a class="afficher_plus" href="#">Afficher plus </a>
+					</div>
 				</section>
 
-        		<section id="hebergement_marseille_pupulaire">
-        		    <!-- La section "Les plus populaires" est un complément à la section "hébergements à Marseille", il comporte une liste d'article. -->
+				<!-- La section "Les plus populaires" comporte plusieurs sections représentant les logements et les prix -->
+        		<section id="section_hebergement_marseille_pupulaire">
 					<div id="txt_pupulaire_icone">
 						 <h2> Les plus populaires </h2>
 						 <div id="test_center"><i class="fas fa-chart-line"></i></div>
@@ -248,10 +251,9 @@
 		        	</div>   			
         		</section>   
         	</div>   
-		
-        	<section id= "activite_marseille">
-				<!-- La section "Activités à Marseille" comporte une liste d'article. -->
 
+			<!-- La section "Activités à Marseille" comporte plusieurs sections représentant les activités à Marseille -->
+        	<section id= "section_activite_marseille">
 				<h2> Activités à Marseille </h2>
 				<div class="group_activite">
 					<a class="lien_activite" href="">
@@ -322,7 +324,7 @@
 			</section>		
 		</main>
 
-        <!-- On décide de découper le footer en 3 parties:
+        <!-- Le footer comporte 3 parties:
             - A propos: Liste de 3 liens.
             - Nos Hébergements: Liste de 2 liens.
             - Assistance: Liste de 2 liens. -->

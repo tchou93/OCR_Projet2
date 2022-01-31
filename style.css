@@ -120,8 +120,13 @@ nav a:nth-child(2):hover {
 
 #texte_hebergement p {
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
+
+#texte_hebergement h2 {
+    margin: 0;
+}
+
 
 /* Dimension et positionnement général de la barre de recherche 
 (icone + Input text + Bouton Rechercher) */
@@ -181,7 +186,7 @@ l'icone, Input text et Bouton Rechercher */
     background-color: #0065fc;
 }
 
-#button-research2 {
+#button-research-mobile {
     visibility:hidden;
 }
 
@@ -199,8 +204,12 @@ l'icone, Input text et Bouton Rechercher */
 #filtre {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#filtre p {
+    margin:0;
 }
 
 /* Utilisation de flex-wrap pour faciliter l'affichage lors de la
@@ -210,6 +219,7 @@ réduction de fenêtre */
 #filtre ul {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     list-style-type: none;
     padding-left: 20px;
 }
@@ -218,15 +228,11 @@ réduction de fenêtre */
     margin-right: 13px;
     align-items: center;
     height: 44px;
-    margin-top: 10px;
     padding-right: 12px;
+    /* padding-right: 12px; */
     width: auto;
     border: solid 2px #c2bdbd8c;
     border-radius: 22px;
-}
-
-#filtre p {
-    margin-top: 18px;
 }
 
 .icone_filtre_arrondie {
@@ -292,7 +298,7 @@ réduction de fenêtre */
 /* Section: Hébergement de Marseille  */
 /* -----------------------------------*/
 
-#hebergement_marseille {
+#section_hebergement_marseille {
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
@@ -301,7 +307,7 @@ réduction de fenêtre */
     height: 483px;
 
     background-color: #F2F2F2;
-    padding: 20px;
+    padding: 1%;
     border-radius: 15px 15px 15px 15px;
 }
 
@@ -312,19 +318,11 @@ réduction de fenêtre */
 }
 
 .lien_card {
-    width: 183px;
+    width: 30%;
     height:160px;
     text-decoration: none;
-    margin: 7px;
+    margin: 1.65%;
     color: black;
-}
-
-.afficher_plus {
-    color: black;
-    text-decoration: none;
-    font-weight:bold;
-    padding-top: 2%;
-    padding-left: 2%;
 }
 
 .card {
@@ -332,7 +330,7 @@ réduction de fenêtre */
     transition: 0.3s;
     width: 100%;
     height:100%;
-    padding: 0.7%;
+    padding: 5px;
     border-radius: 15px 15px 15px 15px;
     background-color: white;
     display: flex;
@@ -340,9 +338,24 @@ réduction de fenêtre */
 
 }
   
-#hebergement_marseille h2 {
-    padding-left: 2%;
+#section_hebergement_marseille h2 {
+    margin-left: 1.65%;
 }
+
+#cont_afficher_plus
+{
+    height:100%;
+    display: flex;
+    align-items: center;
+}
+
+.afficher_plus {
+    color: black;
+    text-decoration: none;
+    font-weight:bold;
+    margin-left: 1.65%;
+}
+
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 101, 252, 0.8);
@@ -362,7 +375,7 @@ réduction de fenêtre */
     display: flex;
     flex-direction: column;
     justify-content:center;
-    padding-left: 5%;
+    padding-left: 3%;
 }
 
 .container_card p, i
@@ -376,7 +389,7 @@ réduction de fenêtre */
 /* -------------------------------------------- */
 /* Section: Hébergement pupulaire de Marseille  */
 /* ---------------------------------------------*/
-#hebergement_marseille_pupulaire
+#section_hebergement_marseille_pupulaire
 {
     width: 32%;
     height: 483px;
@@ -385,12 +398,13 @@ réduction de fenêtre */
     
     background-color: #F2F2F2;
     /* justify-content: space-between; */
-    padding: 20px;
+    padding: 1%;
     border-radius: 15px 15px 15px 15px;
 }
 
-#txt_pupulaire_icone h2{
-    padding-left:  0;
+#txt_pupulaire_icone{
+    padding-left:  3%;
+    padding-right:  3%;
 }
 
 #txt_pupulaire_icone {
@@ -421,9 +435,9 @@ réduction de fenêtre */
 .lien_card_pupulaire {
     color: black;
     text-decoration: none;
-    width:100%;
+    width: 94%;
     height:29%;
-    margin: 7px;
+    margin: 3%;
     /* margin-top: 17px; */
 }
 
@@ -435,7 +449,7 @@ réduction de fenêtre */
     transition: 0.3s;
     width:100%;
     height:100%;
-    padding: 0.7%;
+    padding: 5px;
     border-radius: 15px 15px 15px 15px;
 }
 
@@ -463,7 +477,7 @@ réduction de fenêtre */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 5%;
+  padding-left: 3%;
 }
 
 .container_card_pupulaire p, i
@@ -476,7 +490,7 @@ réduction de fenêtre */
 /* Section: Activités à Marseille     */
 /* -----------------------------------*/
 
-#activite_marseille {
+#section_activite_marseille {
     padding-top: 10px;
     padding-bottom: 40px;
 }
@@ -525,7 +539,16 @@ réduction de fenêtre */
 }
 
 .activite_container_titre {
+    display: flex;
+    align-items: center;
+    width:100%;
+    height: 40px;
     padding-left: 15px;
+
+}
+
+.nom_hotel_activite {
+    margin: 0;
 }
 
 .activite:hover {

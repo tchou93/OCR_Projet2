@@ -46,7 +46,7 @@ nav a:nth-child(2):hover {
 /* Header: introduction de la page  */
 /* -------------------------------- */
 
-#button-research2 {
+#button-research-mobile {
     visibility:visible;
     position: absolute;
     bottom: 0;
@@ -60,7 +60,7 @@ nav a:nth-child(2):hover {
     background-color: #0065FC;
 }
 
-#button-research2:hover {
+#button-research-mobile:hover {
     cursor: pointer;
 }
 
@@ -81,13 +81,17 @@ nav a:nth-child(2):hover {
 /* -----------------*/
 
 #filtre {
+    
     align-items: flex-start;
     flex-direction: column;
 }
 
 #filtre ul {
-    margin-top: -16px;
     padding-left: 0;
+}
+
+#filtre p {
+    margin-bottom: 0;
 }
 
 /* ---------------------------------- */
@@ -95,13 +99,16 @@ nav a:nth-child(2):hover {
 /* -----------------------------------*/
 
 
-#hebergement_marseille {
+#section_hebergement_marseille {
     height: auto;
     background-color:white;
     padding: 0;
     border-radius: 0;
 }
 
+#section_hebergement_marseille h2 {
+    margin-left: 0;
+}
 
 .lien_card {
     width: 100%;
@@ -113,7 +120,7 @@ nav a:nth-child(2):hover {
 /* Section: Hébergement pupulaire de Marseille  */
 /* ---------------------------------------------*/
 
-#hebergement_marseille_pupulaire {    
+#section_hebergement_marseille_pupulaire {    
     width: 100%;
     padding-left: 0;
     padding-right: 0;
@@ -121,8 +128,7 @@ nav a:nth-child(2):hover {
     border-radius: 0;
     margin-left: 0;
     margin-right: 0;
-    padding-left: 4%;
-    padding-right:4%;
+    padding: 4%;
 }
 
 #container_populaire {
@@ -133,8 +139,9 @@ nav a:nth-child(2):hover {
     width: 100%;
 }
 
-#txt_pupulaire_icone h2, #hebergement_marseille h2 {
+#txt_pupulaire_icone {
     padding-left:  0;
+    padding-right:  0;
 }
 
 .lien_card:nth-child(1) .img_hebergement {
@@ -159,6 +166,11 @@ nav a:nth-child(2):hover {
 
 .lien_card:nth-child(6) .img_hebergement {
     content:url(images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+}
+
+.afficher_plus {
+    margin-left: 0;
+    padding-top: 20px;
 }
 
 
