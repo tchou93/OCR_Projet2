@@ -23,10 +23,16 @@ html {
 - important = 18px
 - description = 12px */
 
-h2 {
+h1, h2 {
     font-size: 20px;
     font-weight: bold;
 }
+
+h3 {
+    font-size: 14px;
+    font-weight: bold;  
+}
+
 
 .afficher_plus{
     font-size: 17px;
@@ -38,10 +44,7 @@ h2 {
     font-weight: bold;
 }
 
-.nom_hotel_activite {
-    font-size: 14px;
-    font-weight: bold;  
-}
+
 
 .description {
     font-size: 14px;
@@ -118,7 +121,7 @@ nav a:nth-child(2):hover {
     margin: 10px 0 10px 0
 }
 
-#texte_hebergement h2 {
+#texte_hebergement h1 {
     margin: 0;
 }
 
@@ -194,7 +197,7 @@ l'icone, Input text et Bouton Rechercher */
     margin: 15px 0 15px 0;
 }
 
-#filtre p {
+#filtre h2 {
     margin: 0;
 }
 
@@ -244,7 +247,7 @@ réduction de fenêtre */
     height: 20px;
     display: flex;
     align-items: center;
-    padding-top: 5px 0 10px 0;
+    padding: 5px 0 10px 0;
 }
 
 #icone_info_arrondie {
@@ -350,7 +353,7 @@ réduction de fenêtre */
     padding-left: 3%;
 }
 
-.container_card p, i {
+.container_card .nom_hotel_activite, .container_card .description, i {
     margin: 1% 0 0 0;
 }
 
@@ -368,13 +371,10 @@ réduction de fenêtre */
 }
 
 #txt_pupulaire_icone {
-    padding: 0 3% 0 3%
-}
-
-#txt_pupulaire_icone {
     display: flex;
     justify-content: space-between;
     align-content: center;
+    padding: 0 3% 0 3%
 }
 
 #test_center {
@@ -437,7 +437,7 @@ réduction de fenêtre */
     padding-left: 3%;
 }
 
-.container_card_pupulaire p, i {
+.container_card_pupulaire .nom_hotel_activite,.container_card_pupulaire .description, i {
     margin: 1% 0 1% 0;
 }
 
