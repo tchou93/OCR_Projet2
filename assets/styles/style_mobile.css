@@ -1,49 +1,46 @@
-/* ------------------------------- */
-/* Nav =  Logo Booki + navigation  */
-/* ------------------------------- */
-
-nav {
+/* ------------------------------ */
+/* Navigation part   (logo + nav) */
+/* ------------------------------ */
+.nav-wrapper {
     flex-direction: column;
     margin-left: 0;
     margin-right: 0;
 }
 
-#logo_booki {
+.nav-logo {
     display: flex;
     justify-content: center;
 }
 
-#nav_booki a {
+.nav-links a {
     font-size: 16px;
 }
 
-nav a {
+.nav-wrapper a {
     flex:1;
     text-align: center;
 }
 
-nav a:nth-child(1) {
+.nav-wrapper a:nth-child(1) {
     padding-bottom: 10px;
     border-bottom: 4px solid #0065FC;
     border-top: none; 
 }
 
-nav a:nth-child(2) {
+.nav-wrapper a:nth-child(2) {
     padding-bottom: 10px;
     border-bottom: 4px solid #c2bdbd8c;
 }
 
-nav a:nth-child(2):hover {
+.nav-wrapper a:nth-child(2):hover {
     border-bottom-color:#0065FC ;
     border-top-color:white;
 }
 
-
-/* -------------------------------- */
-/* Header: introduction de la page  */
-/* -------------------------------- */
-
-#button-research-mobile {
+/* ------------------------------- */
+/* Header part (text + search bar) */
+/* ------------------------------- */
+#header-search-btn-mobile {
     width: 44px;
     height: 44px;
     right: -3px;
@@ -56,104 +53,98 @@ nav a:nth-child(2):hover {
     background-color: #0065FC;
 }
 
-#button-research-mobile:hover {
+#header-search-btn-mobile:hover {
     cursor: pointer;
 }
 
-.bouton_rechercher {
+.header-search-btn {
     display: none;
 }
 
-#barre_ville {
+#header-search-input_city {
     right: 29px;
 }
 
-#barre_recherche {
+#header-search-bar {
     width: 280px;
 }
 
-/* ---------------- */
-/* Section: Filtre  */
-/* -----------------*/
-
-#filtre {
+/* ----------------------------------------------- */
+/* Filter section part (filter + information text) */
+/* ----------------------------------------------- */
+#filter-content {
     align-items: flex-start;
     flex-direction: column;
 }
 
-#filtre ul {
+#filter-content ul {
     padding-left: 0;
 }
 
-#filtre p {
+#filter-content p {
     margin-bottom: 0;
 }
 
-/* ---------------------------------- */
-/* Section: Hébergement de Marseille  */
-/* -----------------------------------*/
-
-#section_hebergement_marseille {
+/* ---------------------------------------------------------------------------------------- */
+/* Accomodations section part ( presentation text + list of accomodations + show more text) */
+/* ---------------------------------------------------------------------------------------- */
+#card-accomodation-wrapper {
     height: auto;
     padding: 0;
     border-radius: 0;
     background-color:white;
 }
 
-#section_hebergement_marseille h2 {
+#card-accomodation-wrapper h2 {
     margin-left: 0;
 }
 
-.lien_card {
+.card-accomodation-link {
     width: 100%;
     margin: 1.65% 0 1.65% 0;
 }
 
-/* -------------------------------------------- */
-/* Section: Hébergement pupulaire de Marseille  */
-/* ---------------------------------------------*/
-
-#section_hebergement_marseille_pupulaire {    
+#card-accomodation-popular-wrapper {    
     width: 100%;
     border-radius: 0;
     margin: 0;
     padding: 4%;
 }
 
-#container_populaire {
+#card-accomodation-popular-list {
     flex-direction: column;
 }
 
-.lien_card_pupulaire {
+.card-accomodation-popular-link {
     width: 100%;
     margin: 1.65% 0 1.65% 0;
 }
 
-#txt_pupulaire_icone {
+#card-accomodation-popular-text-icon {
     padding: 0;
 }
 
-.lien_card:nth-child(1) .img_hebergement {
+.card-accomodation-link:nth-child(1) .card_accomodation_img {
     content:url("../img/accommodations/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
 }
 
-.lien_card:nth-child(2) .img_hebergement {
+.card-accomodation-link:nth-child(2) .card_accomodation_img {
     content:url("../img/accommodations/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
 }
 
-.lien_card:nth-child(3) .img_hebergement {
+.card-accomodation-link:nth-child(3) .card_accomodation_img {
     content:url("../img/accommodations/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg");
 }
 
-.lien_card:nth-child(4) .img_hebergement {
+.card-accomodation-link:nth-child(4) .card_accomodation_img {
     content:url("../img/accommodations/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
 }
 
-.lien_card:nth-child(5) .img_hebergement {
+.card-accomodation-link:nth-child(5) .card_accomodation_img {
     content:url("../img/accommodations/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
 }
 
-.lien_card:nth-child(6) .img_hebergement {
+.card-accomodation-link:nth-child(6) .card_accomodation_img {
     content:url("../img/accommodations/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
 }
 
@@ -162,70 +153,66 @@ nav a:nth-child(2):hover {
     padding-top: 20px;
 }
 
-
-/* ---------------------------------- */
-/* Section: Activités à Marseille     */
-/* -----------------------------------*/
-
-.group_activite {
+/* -------------------------------------------------------------------------------------- */
+/* Accomodations popular section part (presentation text + icon + list of accomodations)  */
+/* -------------------------------------------------------------------------------------- */
+.card-activity-list {
     flex-wrap: nowrap;
     height:auto;
 }
 
-.lien_activite {
+.card-activity-link {
     width: 100%; 
     margin: 1.65% 0 1.65% 0;
 }
 
-.lien_activite:nth-child(1) {
+.card-activity-link:nth-child(1) {
     height:160px;
 }
 
-.lien_activite:nth-child(2) {
+.card-activity-link:nth-child(2) {
     height:160px;
 }
 
-.lien_activite:nth-child(3) {
+.card-activity-link:nth-child(3) {
     height:160px;
 }
 
-.lien_activite:nth-child(4) {
+.card-activity-link:nth-child(4) {
     height:160px;
 }
 
-.lien_activite:nth-child(5) {
+.card-activity-link:nth-child(5) {
     height:160px;
 }
 
-.lien_activite:nth-child(6) {
+.card-activity-link:nth-child(6) {
     height:160px;
 }
 
-.lien_activite:nth-child(1) .activite_image {
+.card-activity-link:nth-child(1) .activite_image {
     content:url("../img/activities/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
 }
 
-.lien_activite:nth-child(2) .activite_image {
+.card-activity-link:nth-child(2) .activite_image {
     content:url("../img/activities/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
 }
 
-.lien_activite:nth-child(3) .activite_image {
+.card-activity-link:nth-child(3) .activite_image {
     content:url("../img/activities/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
 }
 
-.lien_activite:nth-child(4) .activite_image {
+.card-activity-link:nth-child(4) .activite_image {
     content:url("../img/activities/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
 }
 
-.lien_activite:nth-child(5) .activite_image {
+.card-activity-link:nth-child(5) .activite_image {
     content:url("../img/activities/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg");
 }
 
-.lien_activite:nth-child(6) .activite_image {
+.card-activity-link:nth-child(6) .activite_image {
     content:url("../img/activities/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
 }
-
-/* Footer */
 
 .footer_list {
     flex-direction: column;

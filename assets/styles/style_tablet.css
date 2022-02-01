@@ -1,30 +1,22 @@
-header, #section_filtre, #section_hebergement_marseille,#section_hebergement_marseille_pupulaire, #section_activite_marseille  {
+.header-wrapper, #filter-wrapper, #card-accomodation-wrapper,#card-accomodation-popular-wrapper, #card-activity-wrapper  {
     margin: 0 4% 0 4%;
 }
 
-nav {
+.nav-wrapper {
     margin: 0 4% 30px 4%;
 }
 
-/* ---------------- */
-/* Section: Filtre  */
-/* -----------------*/
-
-#filtre ul li, #filtre h2  {
+#filter-content ul li, #filter-content h2  {
     margin-bottom: 12px;
 }
 
-/* ---------------------------------- */
-/* Section: Hébergement de Marseille  */
-/* -----------------------------------*/
-
-#hebergement {
+#accomodation-wrapper {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
 }
 
-#section_hebergement_marseille {
+#card-accomodation-wrapper {
     width: 92%;
     display: flex;
     flex-direction: column;
@@ -32,32 +24,24 @@ nav {
 
 }
 
-/* -------------------------------------------- */
-/* Section: Hébergement pupulaire de Marseille  */
-/* ---------------------------------------------*/
-
-#section_hebergement_marseille_pupulaire {
+#card-accomodation-popular-wrapper {
     width: 92%;
     height: auto;
 }
 
-#container_populaire {
+#card-accomodation-popular-list {
     flex-direction: row;
 }
 
-.lien_card_pupulaire {
+.card-accomodation-popular-link {
     width: 31%;
     height: 120px;
     margin: 1.65%;
 }
 
-#txt_pupulaire_icone {
+#card-accomodation-popular-text-icon {
     padding: 0 1.65% 0 1.65%;
 }
-
-/* --------- */
-/* Footer    */
-/* --------- */
 
 .footer_list {
     padding-left: 4%;

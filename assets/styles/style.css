@@ -1,15 +1,13 @@
-/* --------------------------- */
-/* Paramètres généraux du site */
-/* --------------------------- */
+/* ------------------ */
+/* General parameters */
+/* ------------------ */
 
-/* Par défaut tout le textuel va être en font-size: 10px */
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 10px;
     margin: 0;
 }
 
-/* Les balises parents et enfant de html auront la propriété box-sizing: border-box */
 html {
     box-sizing: border-box;
 }
@@ -18,7 +16,7 @@ html {
     box-sizing: inherit;
 }
 
-/* Gestion des polices du site */
+/* Font managing */
 /* - theme = 20px 
 - important = 18px
 - description = 12px */
@@ -33,111 +31,92 @@ h3 {
     font-weight: bold;  
 }
 
-
 .afficher_plus{
     font-size: 17px;
     font-weight: bold;
 }
 
-.important, .bouton_rechercher, #barre_ville {
+.important, .header-search-btn, #header-search-input_city {
     font-size: 16px;
     font-weight: bold;
 }
-
-
 
 .description {
     font-size: 14px;
 }
 
-/* Gestion de la taille des balises sémantiques */
-nav, header, main, #section_filtre {
+/* ------------------------------ */
+/* Navigation part   (logo + nav) */
+/* ------------------------------ */
+.nav-wrapper, .header-wrapper, main, #filter-wrapper {
     max-width: 992px;
     max-height: 100%; 
     margin-left: auto;
     margin-right: auto;
 }
 
-footer {
+.footer_wrapper {
     max-width: 100%;
 }
 
-/* ------------------------------- */
-/* Nav =  Logo Booki + navigation  */
-/* ------------------------------- */
-
-/* Tous les groupes d'élement du header vont être aligné sur une largeur max de 992px */
-/* Le logo booki et la barre de navigation sont de part et d'autre de l'écran */
-
-nav {
+.nav-wrapper {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
 }
 
-/* width: auto sert à garder une dimension proportionnelle de l'image */
-#logo_booki {
+.nav-logo {
     height: 70px;
     padding-top: 25px;
     margin-top: 10px;
 }
 
-#logo_booki img {
+.nav-logo img {
     width: auto; 
     height: 100%; 
 }
 
-
-#nav_booki {
+.nav-links {
     display: flex;
 }
 
-/* Les bordures internes ont été choisi de tel sorte pour penser au surlignage  */
-nav a {
+.nav-wrapper a {
     padding: 43px 20px 0 20px;
     color: black;
     text-decoration: none;
 }
 
-nav a:nth-child(1) {
+.nav-wrapper a:nth-child(1) {
     padding-top: 41px;
     color: #0065fc;
     border-top: 2px solid #0065FC;
 }
 
-
-nav a:nth-child(2):hover {
+.nav-wrapper a:nth-child(2):hover {
     padding-top: 41px;
     border-top: 2px solid #0065FC;
     color: #0065fc;
 }
 
-
-/* -------------------------------- */
-/* Header: introduction de la page  */
-/* -------------------------------- */
-
-#texte_hebergement p {
+/* ------------------------------- */
+/* Header part (text + search bar) */
+/* ------------------------------- */
+.header-text p {
     margin: 10px 0 10px 0
 }
 
-#texte_hebergement h1 {
+.header-text h1 {
     margin: 0;
 }
 
-
-/* Dimension et positionnement général de la barre de recherche 
-(icone + Input text + Bouton Rechercher) */
-#barre_recherche {
+#header-search-bar {
     width: 400px;
     height: 48px;
     position: relative;
     padding-bottom: 15px;
 }
 
-/* On se sert de la position absolue de la barre de recherche pour positionner
-l'icone, Input text et Bouton Rechercher */
-#container_ico_rechercher {
+#header-search-icone {
     width: 40px;
     height: 44px;
     bottom: 0;
@@ -150,7 +129,7 @@ l'icone, Input text et Bouton Rechercher */
     background-color: #F2F2F2;
 }
 
-#barre_ville {
+#header-search-input_city {
     width: 211px;
     height: 44px;
     right: 149px;
@@ -161,11 +140,11 @@ l'icone, Input text et Bouton Rechercher */
     font-weight: bold;
 }
 
-#barre_ville::placeholder {
+#header-search-input_city::placeholder {
     color: black;
 }
 
-.bouton_rechercher {
+.header-search-btn {
     width: 121px;
     height: 44px;
     right: 28px;
@@ -177,33 +156,28 @@ l'icone, Input text et Bouton Rechercher */
     background-color: #0065fc;
 }
 
-#button-research-mobile {
+#header-search-btn-mobile {
     visibility: hidden;
 }
 
-.bouton_rechercher:hover {
+.header-search-btn:hover {
     cursor: pointer;
 }
 
-/* ---------------- */
-/* Section: Filtre  */
-/* -----------------*/
-
-/* Header (3): Filtres  */
-
-#filtre {
+/* ----------------------------------------------- */
+/* Filter section part (filter + information text) */
+/* ----------------------------------------------- */
+#filter-content {
     display: flex;
     align-items: center;
     margin: 15px 0 15px 0;
 }
 
-#filtre h2 {
+#filter-content h2 {
     margin: 0;
 }
 
-/* Utilisation de flex-wrap pour faciliter l'affichage lors de la
-réduction de fenêtre */
-#filtre ul {
+#filter-content ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -211,7 +185,7 @@ réduction de fenêtre */
     padding-left: 20px;
 }
 
-#filtre ul li {
+#filter-content ul li {
     width: auto;
     height: 44px;
     display: flex;
@@ -222,7 +196,7 @@ réduction de fenêtre */
     border-radius: 22px;
 }
 
-.icone_filtre_arrondie {
+.filter-content__circle-icon {
     width: 44px;
     height: 44px;
     display: flex;
@@ -234,15 +208,13 @@ réduction de fenêtre */
     color: #0065fc;
 }
 
-#filtre ul li:hover {
+#filter-content ul li:hover {
     background: #0065FC;
     color: white;
     cursor: pointer;
 }
-  
 
-/* Alignement de l'icone avec le texte */
-#information {
+#filter-info {
     width: 100%;
     height: 20px;
     display: flex;
@@ -250,7 +222,7 @@ réduction de fenêtre */
     padding: 5px 0 10px 0;
 }
 
-#icone_info_arrondie {
+#filter-circle-icon {
     height: 20px;
     width: 20px;
     display: flex;
@@ -260,27 +232,26 @@ réduction de fenêtre */
     border-radius: 50%;
 }
 
-/* Utilisation de border-radius: 50% pour arrondir les contours */
 .fa-info {
     color: #0065fc;
     font-size: 10px;
-  }
+}
 
-#information p {
+#filter-info p {
     margin-left: 5px;
 }
 
-#hebergement {
+/* ---------------------------------------------------------------------------------------- */
+/* Accomodations section part ( presentation text + list of accomodations + show more text) */
+/* ---------------------------------------------------------------------------------------- */
+#accomodation-wrapper {
     max-width: 992px;
     display: flex;
     justify-content: space-between;
     padding: 20px 0 20px 0;
 }
-/* ---------------------------------- */
-/* Section: Hébergement de Marseille  */
-/* -----------------------------------*/
 
-#section_hebergement_marseille {
+#card-accomodation-wrapper {
     width: 65%;
     height: 483px;
     display: flex;
@@ -290,12 +261,12 @@ réduction de fenêtre */
     background-color: #F2F2F2;
 }
 
-#container_hebergement {
+#card-accomodation-list {
     display: flex;
     flex-wrap: wrap;  
 }
 
-.lien_card {
+.card-accomodation-link {
     width: 30%;
     height: 160px;
     margin: 1.65%;
@@ -303,7 +274,7 @@ réduction de fenêtre */
     color: black;
 }
 
-.card {
+.card-accomodation {
     width: 100%;
     height: 100%;
     display: flex;
@@ -315,11 +286,11 @@ réduction de fenêtre */
     background-color: white;
 }
   
-#section_hebergement_marseille h2 {
+#card-accomodation-wrapper h2 {
     margin-left: 1.65%;
 }
 
-#cont_afficher_plus {
+#card-accomodation-show-more-text {
     display: flex;
     align-items: center;
     height: 100%;
@@ -332,19 +303,18 @@ réduction de fenêtre */
     margin-left: 1.65%;
 }
 
-
-.card:hover {
+.card-accomodation:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 101, 252, 0.8);
 }
   
-.img_hebergement {
+.card-accomodation__img {
     width: 100%;
     height: 60%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
 
-.container_card {
+.card-accomodation__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -353,14 +323,14 @@ réduction de fenêtre */
     padding-left: 3%;
 }
 
-.container_card .nom_hotel_activite, .container_card .description, i {
+.card-accomodation__content .nom_hotel_activite, .card-accomodation__content .description, i {
     margin: 1% 0 0 0;
 }
 
-/* -------------------------------------------- */
-/* Section: Hébergement pupulaire de Marseille  */
-/* ---------------------------------------------*/
-#section_hebergement_marseille_pupulaire {
+/* -------------------------------------------------------------------------------------- */
+/* Accomodations popular section part (presentation text + icon + list of accomodations)  */
+/* -------------------------------------------------------------------------------------- */
+#card-accomodation-popular-wrapper {
     width: 32%;
     height: 483px;
     display: flex;
@@ -370,7 +340,7 @@ réduction de fenêtre */
     background-color: #F2F2F2;
 }
 
-#txt_pupulaire_icone {
+#card-accomodation-popular-text-icon {
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -386,14 +356,14 @@ réduction de fenêtre */
     font-size: 20px;
 }
 
-#container_populaire {
+#card-accomodation-popular-list {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
 }
 
-.lien_card_pupulaire {
+.card-accomodation-popular-link {
     width: 94%;
     height:29%;
     color: black;
@@ -401,7 +371,7 @@ réduction de fenêtre */
     margin: 3%;
 }
 
-.card_pupulaire {
+.card-accomodation-popular {
     width: 100%;
     height: 100%;
     display: flex;
@@ -412,23 +382,23 @@ réduction de fenêtre */
     transition: 0.3s;
 }
 
-.resize {
+.card-accomodation-popular__resize-image {
     width: 70%;
     height: 100%;
 } 
 
-.img_hebergement_populaire {
+.card-accomodation-popular__image {
     width: 100%;
     height: 100%;
     object-fit: cover;  
     border-radius: 15px 0 0 15px;
 }
   
-.card_pupulaire:hover {
+.card-accomodation-popular:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 101, 252, 0.8);
 }
 
-.container_card_pupulaire {
+.card-accomodation-popular__content {
     width: 100%;
     height: 90%;
     display: flex;
@@ -437,19 +407,15 @@ réduction de fenêtre */
     padding-left: 3%;
 }
 
-.container_card_pupulaire .nom_hotel_activite,.container_card_pupulaire .description, i {
+.card-accomodation-popular__content .nom_hotel_activite,.card-accomodation-popular__content .description, i {
     margin: 1% 0 1% 0;
 }
 
-/* ---------------------------------- */
-/* Section: Activités à Marseille     */
-/* -----------------------------------*/
-
-#section_activite_marseille {
+#card-activity-wrapper {
     padding: 10px 0 40px 0;
 }
 
-.group_activite {
+.card-activity-list {
     width: 100%;
     height: 350px;
     display: flex;
@@ -458,9 +424,7 @@ réduction de fenêtre */
     flex-wrap: wrap;
 }
 
-/* Activité 1 */
-
-.lien_activite {
+.card-activity-link {
     width: 22%;
     height: 350px;
     margin-right: 4%;
@@ -468,7 +432,7 @@ réduction de fenêtre */
     color: black;
 }
 
-.activite {
+.card-activity {
     width: 100%;
     height: 100%;
     display: flex;
@@ -478,11 +442,14 @@ réduction de fenêtre */
     transition: 0.3s;
 }
 
-.activite_container_image {
+.card-activity__img {
     width: 100%;
     height: calc(100% - 40px);
 }
 
+/* ------------------------------------------------------------------ */
+/* Activities section part ( presentation text + list of Activities)  */
+/* ------------------------------------------------------------------ */
 .activite_image {
     width: 100%;
     height: 100%;
@@ -490,7 +457,7 @@ réduction de fenêtre */
     border-radius: 15px 15px 0 0;
 }
 
-.activite_container_titre {
+.card-activity__title {
     width: 100%;
     height: 40px;
     display: flex;
@@ -498,37 +465,36 @@ réduction de fenêtre */
     padding-left: 15px;
 }
 
-.activite:hover {
+.card-activity:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 101, 252, 0.8);
   }
 
-/* Activité 2 */
-.lien_activite:nth-child(2) {
+/* Activity 1 */
+.card-activity-link:nth-child(2) {
     height: 195px;
 }
 
-/* Activité 4 à les mêmes propriétés que l'activité 1 */
+/* Activity 4 same than activity 1 */
 
-/* Activité 3 */
-.lien_activite:nth-child(3) {
+/* Activity 3 */
+.card-activity-link:nth-child(3) {
     height: 125px;
 }
 
-/* Activité 5 */
-.lien_activite:nth-child(5) {
+/* Activity 5 */
+.card-activity-link:nth-child(5) {
     height: 155px;
 }
 
-/* Activité 6 */
-.lien_activite:nth-child(6) {
+/* Activity 6 */
+.card-activity-link:nth-child(6) {
     height: 165px;
 }
 
-/* --------- */
-/* Footer    */
-/* --------- */
-
-footer {
+/* ---------------------------------------------- */
+/* Footer part (split into three lists of links)  */
+/* ---------------------------------------------- */
+.footer_wrapper {
     display: flex;
     justify-content: center;
     padding-top: 10px;
@@ -540,38 +506,38 @@ footer {
     width: 992px; 
 }
 
-.footer_container {
+.footer_content {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
 
-.footer_container ul {
+.footer_content ul {
     padding-left: 0;
     list-style-type: none;
 }
 
-.footer_container li {
+.footer_content li {
     padding-top: 6px;
 }
 
-.footer_container a {
+.footer_content a {
     text-decoration: none;
     color: black;
 }
 
-.footer_container:nth-of-type(1) {
+.footer_content:nth-of-type(1) {
     flex: 1;
 }
 
-.footer_container:nth-of-type(2) {
+.footer_content:nth-of-type(2) {
     flex: 1;
 }
 
-.footer_container:nth-of-type(3) {
+.footer_content:nth-of-type(3) {
     flex: 1;
 }
 
-.footer_container a:hover {
+.footer_content a:hover {
     color: #0065fc;
 }
