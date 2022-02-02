@@ -322,6 +322,10 @@ html {
     padding-left: 2%;
 }
 
+.card-accomodation-price-font-weight{
+    font-weight: bold;
+}
+
 .font-size-title-card, .card-accomodation__content, .font-size-description-card, .card-accomodation__content i {
     margin: 0.7% 0 0 0;
 }
@@ -351,10 +355,6 @@ html {
     align-items: center;
 }
 
-.fa-chart-line {
-    font-size: 20px;
-}
-
 #card-accomodation-popular-list {
     width: 100%;
     height: auto;
@@ -381,6 +381,14 @@ html {
     transition: 0.3s;
 }
 
+.fa-star-blue {
+    color:#0065fc;
+}
+
+.fa-star-grey {
+    color:#d3d1d1;
+}
+
 .card-accomodation-popular__resize-image {
     width: 70%;
     height: 100%;
@@ -405,6 +413,7 @@ html {
     justify-content: space-between;
     padding-left: 3%;
 }
+
 
 #card-activity-wrapper {
     padding: 10px 0 40px 0;
