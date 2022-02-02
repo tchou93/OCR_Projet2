@@ -31,23 +31,24 @@ html {
 /* Font size managing */
 /* ------------------ */
 
+
+
+.main-title-font-size {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-accomodation-show-more-font-size{
+    font-size: 17px;
+    font-weight: bold;
+}
+
 .header-search-btn, #header-search-input_city, .filter-font-size {
     font-size: 16px;
     font-weight: bold;
 }
-
-.main-title-font-size {
-    font-size: 20px;
-    font-weight: bold;  
-}
-
 .nav-font-size, .font-size-title-card, .footer-title-font-size, .font-size-title-card {
     font-size: 14px;
-    font-weight: bold;  
-}
-
-.afficher_plus{
-    font-size: 17px;
     font-weight: bold;
 }
 
@@ -137,7 +138,6 @@ html {
     position: absolute;
     padding-left: 11px;
     border: 1px solid #F2F2F2;
-    font-weight: bold;
 }
 
 #header-search-input_city::placeholder {
@@ -296,10 +296,9 @@ html {
     height: 100%;
 }
 
-.afficher_plus {
+.card-accomodation-show-more-font-size {
     color: black;
     text-decoration: none;
-    font-weight: bold;
     margin-left: 1.65%;
 }
 
@@ -438,7 +437,7 @@ html {
     transition: 0.3s;
 }
 
-.card-activity__img {
+.card-activity__img-resize {
     width: 100%;
     height: calc(100% - 40px);
 }
@@ -446,7 +445,7 @@ html {
 /* ------------------------------------------------------------------ */
 /* Activities section part ( presentation text + list of Activities)  */
 /* ------------------------------------------------------------------ */
-.activite_image {
+.card-activity__img {
     width: 100%;
     height: 100%;
     object-fit: cover;

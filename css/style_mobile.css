@@ -124,32 +124,32 @@
     padding: 0;
 }
 
-.card-accomodation-link:nth-child(1) .card_accomodation_img {
-    content:url("../img/accommodations/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+.card-accomodation-link:nth-child(1) .card-accomodation__img {
+    content:url("../assets/img/accommodations/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
 }
 
-.card-accomodation-link:nth-child(2) .card_accomodation_img {
-    content:url("../img/accommodations/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+.card-accomodation-link:nth-child(2) .card-accomodation__img {
+    content:url("../assets/img/accommodations/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
 }
 
-.card-accomodation-link:nth-child(3) .card_accomodation_img {
-    content:url("../img/accommodations/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+.card-accomodation-link:nth-child(3) .card-accomodation__img {
+    content:url("../assets/img/accommodations/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg");
 }
 
-.card-accomodation-link:nth-child(4) .card_accomodation_img {
-    content:url("../img/accommodations/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+.card-accomodation-link:nth-child(4) .card-accomodation__img {
+    content:url("../assets/img/accommodations/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
 }
 
-.card-accomodation-link:nth-child(5) .card_accomodation_img {
-    content:url("../img/accommodations/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+.card-accomodation-link:nth-child(5) .card-accomodation__img {
+    content:url("../assets/img/accommodations/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
 }
 
-.card-accomodation-link:nth-child(6) .card_accomodation_img {
-    content:url("../img/accommodations/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+.card-accomodation-link:nth-child(6) .card-accomodation__img {
+    content:url("../assets/img/accommodations/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
 }
 
-.card-accomodation-card-accomodation-card-accomodation-font-size-title-card {
-    margin-left: 0;
+.card-accomodation-show-more-font-size {
+    margin: 20px 0 0 0;
 }
 
 /* -------------------------------------------------------------------------------------- */
@@ -189,28 +189,28 @@
     height:160px;
 }
 
-.card-activity-link:nth-child(1) .activite_image {
-    content:url("../img/activities/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+.card-activity-link:nth-child(1) .card-activity__img {
+    content:url("../assets/img/accommodations/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
 }
 
-.card-activity-link:nth-child(2) .activite_image {
-    content:url("../img/activities/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+.card-activity-link:nth-child(2) .card-activity__img {
+    content:url("../assets/img/activities/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
 }
 
-.card-activity-link:nth-child(3) .activite_image {
-    content:url("../img/activities/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+.card-activity-link:nth-child(3) .card-activity__img {
+    content:url("../assets/img/activities/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
 }
 
-.card-activity-link:nth-child(4) .activite_image {
-    content:url("../img/activities/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+.card-activity-link:nth-child(4) .card-activity__img {
+    content:url("../assets/img/activities/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
 }
 
-.card-activity-link:nth-child(5) .activite_image {
-    content:url("../img/activities/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+.card-activity-link:nth-child(5) .card-activity__img {
+    content:url("../assets/img/activities/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg");
 }
 
-.card-activity-link:nth-child(6) .activite_image {
-    content:url("../img/activities/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+.card-activity-link:nth-child(6) .card-activity__img {
+    content:url("../assets/img/activities/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
 }
 
 .footer_list {
