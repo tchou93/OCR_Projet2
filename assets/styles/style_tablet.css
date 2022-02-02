@@ -1,4 +1,4 @@
-.header-wrapper, #filter-wrapper, #card-accomodation-wrapper,#card-accomodation-popular-wrapper, #card-activity-wrapper  {
+.header-wrapper, .filter-wrapper, #card-accomodation-wrapper,#card-accomodation-popular-wrapper, #card-activity-wrapper  {
     margin: 0 4% 0 4%;
 }
 
