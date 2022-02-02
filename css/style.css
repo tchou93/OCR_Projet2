@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    font-size: 10px;
+    /* font-size: 10px; */
     margin: 0;
 }
 
@@ -27,11 +27,19 @@ html {
     max-width: 100%;
 }
 
+@media screen and (max-width: 991px) {
+    .header-wrapper, .filter-wrapper, #card-accomodation-wrapper,#card-accomodation-popular-wrapper, #card-activity-wrapper  {
+        margin: 0 4% 0 4%;  
+    }
+
+    .nav-wrapper {
+        margin: 0 4% 30px 4%;
+    }    
+}
+
 /* ------------------ */
 /* Font size managing */
 /* ------------------ */
-
-
 
 .main-title-font-size {
     font-size: 20px;
@@ -47,8 +55,15 @@ html {
     font-size: 16px;
     font-weight: bold;
 }
-.nav-font-size, .font-size-title-card, .footer-title-font-size, .font-size-title-card {
+
+.footer-title-font-size, .font-size-title-card {
     font-size: 14px;
+    font-weight: bold;
+    margin:0;
+}
+
+.nav-font-size {
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -97,6 +112,44 @@ html {
     padding-top: 41px;
     border-top: 2px solid #0065FC;
     color: #0065fc;
+}
+
+@media screen and (max-width: 767px) {
+    .nav-wrapper {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .nav-logo {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .nav-links a {
+        font-size: 16px;
+    }
+    
+    .nav-wrapper a {
+        flex:1;
+        text-align: center;
+    }
+    
+    .nav-wrapper a:nth-child(1) {
+        padding-bottom: 10px;
+        border-bottom: 4px solid #0065FC;
+        border-top: none; 
+    }
+    
+    .nav-wrapper a:nth-child(2) {
+        padding-bottom: 10px;
+        border-bottom: 4px solid #c2bdbd8c;
+    }
+    
+    .nav-wrapper a:nth-child(2):hover {
+        border-bottom-color:#0065FC ;
+        border-top-color:white;
+    }
 }
 
 /* ------------------------------- */
@@ -164,6 +217,37 @@ html {
     cursor: pointer;
 }
 
+@media screen and (max-width: 767px) {
+    #header-search-btn-mobile {
+        width: 44px;
+        height: 44px;
+        right: -3px;
+        bottom: 0;
+        position: absolute;
+        visibility:visible;
+        border: none;
+        border-radius: 15px;
+        color: white;
+        background-color: #0065FC;
+    }
+    
+    #header-search-btn-mobile:hover {
+        cursor: pointer;
+    }
+    
+    .header-search-btn {
+        display: none;
+    }
+    
+    #header-search-input_city {
+        right: 29px;
+    }
+    
+    #header-search-bar {
+        width: 280px;
+    }
+}
+
 /* ----------------------------------------------- */
 /* Filter section part (filter + information text) */
 /* ----------------------------------------------- */
@@ -193,7 +277,7 @@ html {
     padding-right: 12px;
     margin-right: 13px;
     border: solid 2px #c2bdbd8c;
-    border-radius: 22px;
+    border-radius: 20px;
 }
 
 .filter-content__circle-icon {
@@ -239,6 +323,27 @@ html {
 
 #filter-info p {
     margin-left: 5px;
+}
+
+@media screen and (max-width: 991px) {
+    #filter-content ul li, #filter-content h2  {
+        margin-bottom: 12px;
+    }    
+}
+
+@media screen and (max-width: 767px) {
+    #filter-content {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    
+    #filter-content ul {
+        padding-left: 0;
+    }
+    
+    #filter-content p {
+        margin-bottom: 0;
+    }
 }
 
 /* ---------------------------------------------------------------------------------------- */
@@ -330,6 +435,43 @@ html {
     margin: 0.7% 0 0 0;
 }
 
+@media screen and (max-width: 991px) {
+    #accomodation-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    #card-accomodation-wrapper {
+        width: 92%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #card-accomodation-wrapper {
+        height: auto;
+        padding: 0;
+        border-radius: 0;
+        background-color:white;
+    }
+
+    #card-accomodation-wrapper h2 {
+        margin-left: 0;
+    }
+    
+    .card-accomodation-link {
+        width: 100%;
+        margin: 1.65% 0 1.65% 0;
+    }
+
+    .card-accomodation-show-more-font-size {
+        margin: 20px 0 0 0;
+    }
+}
+
 /* -------------------------------------------------------------------------------------- */
 /* Accomodations popular section part (presentation text + icon + list of accomodations)  */
 /* -------------------------------------------------------------------------------------- */
@@ -353,6 +495,7 @@ html {
 #card-accomodation-popular-icon_center {
     display: flex;
     align-items: center;
+    font-size: 22px;
 }
 
 #card-accomodation-popular-list {
@@ -383,10 +526,12 @@ html {
 
 .fa-star-blue {
     color:#0065fc;
+    font-size: 11px;
 }
 
 .fa-star-grey {
     color:#d3d1d1;
+    font-size: 11px;
 }
 
 .card-accomodation-popular__resize-image {
@@ -414,6 +559,57 @@ html {
     padding-left: 3%;
 }
 
+.card-accomodation-popular__description h3, .card-accomodation-popular__description p {
+    padding-top: 5px;
+}
+
+
+@media screen and (max-width: 991px) {
+    #card-accomodation-popular-wrapper {
+        width: 92%;
+        height: auto;
+    }
+    
+    #card-accomodation-popular-list {
+        flex-direction: row;
+    }
+    
+    .card-accomodation-popular-link {
+        width: 31%;
+        height: 120px;
+        margin: 1.65%;
+    }
+    
+    #card-accomodation-popular-text-icon {
+        padding: 0 1.65% 0 1.65%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #card-accomodation-popular-wrapper {    
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+        padding: 4%;
+    }
+
+    #card-accomodation-popular-list {
+        flex-direction: column;
+    }
+
+    .card-accomodation-popular-link {
+        width: 100%;
+        margin: 1.65% 0 1.65% 0;
+    }
+
+    #card-accomodation-popular-text-icon {
+        padding: 0;
+    }
+}
+
+/* ------------------------------------------------------------------ */
+/* Activities section part ( presentation text + list of Activities)  */
+/* ------------------------------------------------------------------ */
 
 #card-activity-wrapper {
     padding: 10px 0 40px 0;
@@ -426,14 +622,6 @@ html {
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-
-.card-activity-link {
-    width: 22%;
-    height: 350px;
-    margin-right: 4%;
-    text-decoration: none;
-    color: black;
 }
 
 .card-activity {
@@ -451,9 +639,6 @@ html {
     height: calc(100% - 40px);
 }
 
-/* ------------------------------------------------------------------ */
-/* Activities section part ( presentation text + list of Activities)  */
-/* ------------------------------------------------------------------ */
 .card-activity__img {
     width: 100%;
     height: 100%;
@@ -471,19 +656,28 @@ html {
 
 .card-activity:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 101, 252, 0.8);
-  }
+}
 
 /* Activity 1 */
+.card-activity-link {
+    width: 22%;
+    height: 350px;
+    margin-right: 4%;
+    text-decoration: none;
+    color: black;
+}
+
+/* Activity 2 */
 .card-activity-link:nth-child(2) {
     height: 195px;
 }
-
-/* Activity 4 same than activity 1 */
 
 /* Activity 3 */
 .card-activity-link:nth-child(3) {
     height: 125px;
 }
+
+/* Activity 4 same than activity 1 */
 
 /* Activity 5 */
 .card-activity-link:nth-child(5) {
@@ -495,13 +689,49 @@ html {
     height: 165px;
 }
 
+@media screen and (max-width: 767px) {
+    .card-activity-list {
+        flex-wrap: nowrap;
+        height:auto;
+    }
+
+    .card-activity-link {
+        width: 100%; 
+        margin: 1.65% 0 1.65% 0;
+    }
+
+    .card-activity-link:nth-child(1) {
+        height:160px;
+    }
+
+    .card-activity-link:nth-child(2) {
+        height:160px;
+    }
+
+    .card-activity-link:nth-child(3) {
+        height:160px;
+    }
+
+    .card-activity-link:nth-child(4) {
+        height:160px;
+    }
+
+    .card-activity-link:nth-child(5) {
+        height:160px;
+    }
+
+    .card-activity-link:nth-child(6) {
+        height:160px;
+    }
+}
+
 /* ---------------------------------------------- */
 /* Footer part (split into three lists of links)  */
 /* ---------------------------------------------- */
 .footer_wrapper {
     display: flex;
     justify-content: center;
-    padding-top: 10px;
+    padding: 40px 0 20px 0;
     background-color: #F2F2F2;
 }
 
@@ -513,7 +743,6 @@ html {
 .footer_content {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
 }
 
 .footer_content ul {
@@ -531,17 +760,31 @@ html {
 }
 
 .footer_content:nth-of-type(1) {
-    flex: 1;
+    flex: 1.3;
 }
 
 .footer_content:nth-of-type(2) {
-    flex: 1;
+    flex: 1.3;
 }
 
 .footer_content:nth-of-type(3) {
-    flex: 1;
+    flex: 1.3;
 }
 
 .footer_content a:hover {
     color: #0065fc;
 }
+
+@media screen and (max-width: 991px) {
+    .footer_list {
+        padding-left: 4%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer_list {
+        flex-direction: column;
+    }
+}
+
+
