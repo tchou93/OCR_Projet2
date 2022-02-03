@@ -28,7 +28,7 @@ html {
 }
 
 @media screen and (max-width: 991px) {
-    .header-wrapper, .filter-wrapper, #card-accomodation-wrapper,#card-accomodation-popular-wrapper, #card-activity-wrapper  {
+    .header-wrapper, .filter-wrapper, .card-accomodation-wrapper,.card-accomodation-popular-wrapper, #card-activity-wrapper  {
         margin: 0 4% 0 4%;  
     }
 
@@ -51,7 +51,7 @@ html {
     font-weight: bold;
 }
 
-.header-search-btn, #header-search-input_city, .filter-font-size {
+.header-search-btn, .header-search-input_city, .filter-font-size {
     font-size: 16px;
     font-weight: bold;
 }
@@ -163,14 +163,14 @@ html {
     margin: 0;
 }
 
-#header-search-bar {
+.header-search-bar {
     width: 400px;
     height: 48px;
     position: relative;
     padding-bottom: 15px;
 }
 
-#header-search-icone {
+.header-search-icone {
     width: 40px;
     height: 44px;
     bottom: 0;
@@ -183,7 +183,7 @@ html {
     background-color: #F2F2F2;
 }
 
-#header-search-input_city {
+.header-search-input_city {
     width: 211px;
     height: 44px;
     right: 149px;
@@ -193,7 +193,7 @@ html {
     border: 1px solid #F2F2F2;
 }
 
-#header-search-input_city::placeholder {
+.header-search-input_city::placeholder {
     color: black;
 }
 
@@ -231,7 +231,7 @@ html {
         background-color: #0065FC;
     }
     
-    #header-search-btn-mobile:hover {
+    .header-search-btn-mobile:hover {
         cursor: pointer;
     }
     
@@ -239,11 +239,11 @@ html {
         display: none;
     }
     
-    #header-search-input_city {
+    .header-search-input_city {
         right: 29px;
     }
     
-    #header-search-bar {
+    .header-search-bar {
         width: 280px;
     }
 }
@@ -251,17 +251,17 @@ html {
 /* ----------------------------------------------- */
 /* Filter section part (filter + information text) */
 /* ----------------------------------------------- */
-#filter-content {
+.filter-content {
     display: flex;
     align-items: center;
     margin: 15px 0 15px 0;
 }
 
-#filter-content h2 {
+.filter-content h2 {
     margin: 0;
 }
 
-#filter-content ul {
+.filter-content ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -269,7 +269,7 @@ html {
     padding-left: 20px;
 }
 
-#filter-content ul li {
+.filter-content ul li {
     width: auto;
     height: 44px;
     display: flex;
@@ -292,13 +292,13 @@ html {
     color: #0065fc;
 }
 
-#filter-content ul li:hover {
+.filter-content ul li:hover {
     background: #0065FC;
     color: white;
     cursor: pointer;
 }
 
-#filter-info {
+.filter-info {
     width: 100%;
     height: 20px;
     display: flex;
@@ -306,7 +306,7 @@ html {
     padding: 5px 0 10px 0;
 }
 
-#filter-circle-icon {
+.filter-circle-icon {
     height: 20px;
     width: 20px;
     display: flex;
@@ -321,27 +321,27 @@ html {
     font-size: 10px;
 }
 
-#filter-info p {
+.filter-info p {
     margin-left: 5px;
 }
 
 @media screen and (max-width: 991px) {
-    #filter-content ul li, #filter-content h2  {
+    .filter-content ul li, .filter-content h2  {
         margin-bottom: 12px;
     }    
 }
 
 @media screen and (max-width: 767px) {
-    #filter-content {
+    .filter-content {
         align-items: flex-start;
         flex-direction: column;
     }
     
-    #filter-content ul {
+    .filter-content ul {
         padding-left: 0;
     }
     
-    #filter-content p {
+    .filter-content p {
         margin-bottom: 0;
     }
 }
@@ -356,7 +356,7 @@ html {
     padding: 20px 0 20px 0;
 }
 
-#card-accomodation-wrapper {
+.card-accomodation-wrapper {
     width: 65%;
     height: 483px;
     display: flex;
@@ -366,7 +366,7 @@ html {
     background-color: #F2F2F2;
 }
 
-#card-accomodation-list {
+.card-accomodation-list {
     display: flex;
     flex-wrap: wrap;  
 }
@@ -391,11 +391,11 @@ html {
     background-color: white;
 }
   
-#card-accomodation-wrapper h2 {
+.card-accomodation-wrapper h2 {
     margin-left: 1.65%;
 }
 
-#card-accomodation-show-more-text {
+.card-accomodation-show-more-text {
     display: flex;
     align-items: center;
     height: 100%;
@@ -442,7 +442,7 @@ html {
         justify-content: space-between;
     }
 
-    #card-accomodation-wrapper {
+    .card-accomodation-wrapper {
         width: 92%;
         display: flex;
         flex-direction: column;
@@ -451,14 +451,14 @@ html {
 }
 
 @media screen and (max-width: 767px) {
-    #card-accomodation-wrapper {
+    .card-accomodation-wrapper {
         height: auto;
         padding: 0;
         border-radius: 0;
         background-color:white;
     }
 
-    #card-accomodation-wrapper h2 {
+    .card-accomodation-wrapper h2 {
         margin-left: 0;
     }
     
@@ -475,7 +475,7 @@ html {
 /* -------------------------------------------------------------------------------------- */
 /* Accomodations popular section part (presentation text + icon + list of accomodations)  */
 /* -------------------------------------------------------------------------------------- */
-#card-accomodation-popular-wrapper {
+.card-accomodation-popular-wrapper {
     width: 32%;
     height: 483px;
     display: flex;
@@ -485,20 +485,20 @@ html {
     background-color: #F2F2F2;
 }
 
-#card-accomodation-popular-text-icon {
+.card-accomodation-popular-text-icon {
     display: flex;
     justify-content: space-between;
     align-content: center;
     padding: 0 3% 0 3%
 }
 
-#card-accomodation-popular-icon_center {
+.card-accomodation-popular-icon_center {
     display: flex;
     align-items: center;
     font-size: 22px;
 }
 
-#card-accomodation-popular-list {
+.card-accomodation-popular-list {
     width: 100%;
     height: auto;
     display: flex;
@@ -565,12 +565,12 @@ html {
 
 
 @media screen and (max-width: 991px) {
-    #card-accomodation-popular-wrapper {
+    .card-accomodation-popular-wrapper {
         width: 92%;
         height: auto;
     }
     
-    #card-accomodation-popular-list {
+    .card-accomodation-popular-list {
         flex-direction: row;
     }
     
@@ -580,20 +580,20 @@ html {
         margin: 1.65%;
     }
     
-    #card-accomodation-popular-text-icon {
+    .card-accomodation-popular-text-icon {
         padding: 0 1.65% 0 1.65%;
     }
 }
 
 @media screen and (max-width: 767px) {
-    #card-accomodation-popular-wrapper {    
+    .card-accomodation-popular-wrapper {    
         width: 100%;
         border-radius: 0;
         margin: 0;
         padding: 4%;
     }
 
-    #card-accomodation-popular-list {
+    .card-accomodation-popular-list {
         flex-direction: column;
     }
 
@@ -602,7 +602,7 @@ html {
         margin: 1.65% 0 1.65% 0;
     }
 
-    #card-accomodation-popular-text-icon {
+    .card-accomodation-popular-text-icon {
         padding: 0;
     }
 }
