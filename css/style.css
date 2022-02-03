@@ -22,7 +22,7 @@ body {
     margin-right: auto;
 }
 
-.footer_wrapper {
+.footer-wrapper {
     max-width: 100%;
 }
 
@@ -34,7 +34,7 @@ body {
     font-weight: bold;
 }
 
-.header-search-btn, .header-search-input_city, .filter-font-size {
+.header-search-btn, .header-search-input-city, .filter-font-size {
     font-size: 1.1rem;
     font-weight: bold;
 }
@@ -67,14 +67,10 @@ body {
 }
 
 .nav-logo {
-    height: 70px;
+    width: 100px; 
+    height: auto;
     padding-top: 25px;
     margin-top: 10px;
-}
-
-.nav-logo img {
-    width: auto; 
-    height: 100%; 
 }
 
 .nav-links {
@@ -102,12 +98,12 @@ body {
 /* ------------------------------- */
 /* Header part (text + search bar) */
 /* ------------------------------- */
-.header-text p {
-    margin: 10px 0 10px 0
+.header-wrapper h1 {
+    margin: 0;
 }
 
-.header-text h1 {
-    margin: 0;
+.header-wrapper p {
+    margin: 10px 0 10px 0
 }
 
 .header-search-bar {
@@ -130,7 +126,7 @@ body {
     background-color: #F2F2F2;
 }
 
-.header-search-input_city {
+.header-search-input-city {
     width: 211px;
     height: 44px;
     right: 149px;
@@ -140,7 +136,7 @@ body {
     border: 1px solid #F2F2F2;
 }
 
-.header-search-input_city::placeholder {
+.header-search-input-city::placeholder {
     color: black;
 }
 
@@ -195,7 +191,7 @@ body {
     border-radius: 20px;
 }
 
-.filter-content__circle-icon {
+.filter-content-circle-icon {
     width: 44px;
     height: 44px;
     display: flex;
@@ -255,6 +251,7 @@ body {
     height: 483px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 1%;
     border-radius: 15px;
     background-color: #F2F2F2;
@@ -289,30 +286,28 @@ body {
     margin-left: 1.65%;
 }
 
-.card-accomodation-show-more-text {
+.card-accomodation-show-more-font-size {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
-    height: 100%;
-}
-
-.card-accomodation-show-more-font-size {
-    color: black;
     text-decoration: none;
     margin-left: 1.65%;
+    color: black;
 }
 
 .card-accomodation:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 101, 252, 0.8);
 }
   
-.card-accomodation__img {
+.card-accomodation-img {
     width: 100%;
     height: 60%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
 
-.card-accomodation__content {
+.card-accomodation-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -325,7 +320,7 @@ body {
     font-weight: bold;
 }
 
-.font-size-title-card, .card-accomodation__content, .font-size-description-card, .card-accomodation__content i {
+.font-size-title-card, .card-accomodation-content, .font-size-description-card, .card-accomodation-content i {
     margin: 0.7% 0 0 0;
 }
 
@@ -357,14 +352,14 @@ body {
 
 .card-accomodation-popular-list {
     width: 100%;
-    height: auto;
+    height: 404px;
     display: flex;
     flex-direction: column;
 }
 
 .card-accomodation-popular-link {
     width: 94%;
-    height:29%;
+    height: 117px;
     color: black;
     text-decoration: none;
     margin: 3%;
@@ -391,13 +386,8 @@ body {
     font-size: 0.6rem;
 }
 
-.card-accomodation-popular__resize-image {
-    width: 70%;
-    height: 100%;
-} 
-
-.card-accomodation-popular__image {
-    width: 100%;
+.card-accomodation-popular-image {
+    width: 40%;
     height: 100%;
     object-fit: cover;  
     border-radius: 15px 0 0 15px;
@@ -407,16 +397,16 @@ body {
     box-shadow: 0 8px 16px 0 rgba(0, 101, 252, 0.8);
 }
 
-.card-accomodation-popular__content {
-    width: 100%;
-    height: 90%;
+.card-accomodation-popular-content {
+    width: 60%;
+    height: 95%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-left: 3%;
 }
 
-.card-accomodation-popular__description h3, .card-accomodation-popular__description p {
+.card-accomodation-popular-description h3, .card-accomodation-popular-description p {
     padding-top: 5px;
 }
 
@@ -447,19 +437,14 @@ body {
     transition: 0.3s;
 }
 
-.card-activity__img-resize {
+.card-activity-img {
     width: 100%;
     height: calc(100% - 40px);
-}
-
-.card-activity__img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
 
-.card-activity__title {
+.card-activity-title {
     width: 100%;
     height: 40px;
     display: flex;
@@ -501,33 +486,33 @@ body {
 /* ---------------------------------------------- */
 /* Footer part (split into three lists of links)  */
 /* ---------------------------------------------- */
-.footer_wrapper {
+.footer-wrapper {
     display: flex;
     justify-content: center;
     padding: 40px 0 20px 0;
     background-color: #F2F2F2;
 }
 
-.footer_list {
+.footer-list {
     display: flex;
     width: 992px; 
 }
 
-.footer_content {
+.footer-content {
     display: flex;
     flex-direction: column;
 }
 
-.footer_content ul {
+.footer-content ul {
     padding-left: 0;
     list-style-type: none;
 }
 
-.footer_content li {
+.footer-content li {
     padding-top: 6px;
 }
 
-.footer_content a {
+.footer-content a {
     text-decoration: none;
     color: black;
 }
@@ -536,22 +521,21 @@ body {
     margin: 0;
 }
 
-.footer_content:nth-of-type(1) {
+.footer-content:nth-of-type(1) {
     flex: 1.3;
 }
 
-.footer_content:nth-of-type(2) {
+.footer-content:nth-of-type(2) {
     flex: 1.3;
 }
 
-.footer_content:nth-of-type(3) {
+.footer-content:nth-of-type(3) {
     flex: 1.3;
 }
 
-.footer_content a:hover {
+.footer-content a:hover {
     color: #0065fc;
 }
-
 
 /* ----------------------- */
 /* Responsive part: tablet */
@@ -594,6 +578,7 @@ body {
     
     .card-accomodation-popular-list {
         flex-direction: row;
+        height: auto;
     }
     
     .card-accomodation-popular-link {
@@ -606,7 +591,7 @@ body {
         padding: 0 1.65% 0 1.65%;
     }
 
-    .footer_list {
+    .footer-list {
         padding-left: 4%;
     }
 }
@@ -617,7 +602,7 @@ body {
 
 @media screen and (max-width: 767px) {
     html {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .nav-wrapper {
@@ -626,16 +611,14 @@ body {
         margin-right: 0;
     }
     
-    .nav-logo {
-        display: flex;
-        justify-content: center;
+    .nav-logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
-    
-    .nav-links a {
+
+    .nav-font-size {
         font-size: 16px;
-    }
-    
-    .nav-wrapper a {
         flex:1;
         text-align: center;
     }
@@ -677,7 +660,7 @@ body {
         display: none;
     }
     
-    .header-search-input_city {
+    .header-search-input-city {
         right: 29px;
     }
     
@@ -752,7 +735,7 @@ body {
         height:160px;
     }
 
-    .footer_list {
+    .footer-list {
         flex-direction: column;
     }
 }
